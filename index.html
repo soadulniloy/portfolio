@@ -1,14 +1,463 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Md. Shoadul Islam Niloy · Software Engineer & Full-Stack Developer</title>
-<meta name="description" content="Portfolio of Md. Shoadul Islam Niloy: software engineer, full-stack developer, IEEE Access author and IIT Bombay exchange student.">
-<link rel="canonical" href="https://www.soadulniloy.me/"><meta property="og:title" content="Md. Shoadul Islam Niloy"><meta property="og:description" content="Turning Ideas into Digital Experiences and Practical Software Solutions."><meta property="og:image" content="https://www.soadulniloy.me/images/portrait.jpg">
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NILOY. | MD. Shoadul Islam Niloy: Software Engineer & Researcher</title><meta name="theme-color" content="#050B18">
+<meta name="description" content="Portfolio of MD. Shoadul Islam Niloy: CSE graduate, IIT Bombay exchange student, IEEE Access author, full-stack developer.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Md. Shoadul Islam Niloy","url":"https://www.soadulniloy.me","jobTitle":"Software Engineer","alumniOf":"Daffodil International University"}</script></head>
-<body><header id="bar"><a href="#home" class="logo">Niloy</a><button id="mb" aria-expanded="false" aria-controls="menu">Menu</button></header>
-<nav id="menu" aria-label="Sections"></nav>
-<main id="app"></main>
-<div class="ov" id="ov" hidden><div class="modal ch" id="md" role="dialog" aria-modal="true"></div></div>
-<div class="ov" id="lb" hidden><button class="x" id="lx" aria-label="Close">×</button><button class="arr" id="lp" style="left:14px" aria-label="Previous">‹</button><button class="arr" id="ln" style="right:14px" aria-label="Next">›</button><figure><img id="li" alt=""><figcaption id="lc"></figcaption></figure></div>
-<script src="content.js"></script><script src="app.js"></script></body></html>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050B18;--bg2:#091426;--card:#101F35;--el:#152943;--cy:#00D9FF;--bl:#3B82F6;--ice:#A5F3FC;--tx:#F1F5F9;--mu:#94A3B8;--bd:rgba(148,163,184,.16);--head:Sora,system-ui,sans-serif;--sans:Inter,system-ui,sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.45;background:linear-gradient(var(--bd) 1px,transparent 1px) 0 0/56px 56px,linear-gradient(90deg,var(--bd) 1px,transparent 1px) 0 0/56px 56px;mask-image:radial-gradient(ellipse at 50% 15%,#000,transparent 75%)}
+#glow{position:fixed;left:0;top:0;width:520px;height:520px;margin:-260px 0 0 -260px;background:radial-gradient(circle,rgba(0,217,255,.1),transparent 65%);pointer-events:none;z-index:-1}
+#ld{position:fixed;inset:0;z-index:99;background:var(--bg);display:grid;place-items:center;font:700 34px var(--head);letter-spacing:.1em;animation:ld .5s .9s forwards}#ld b{color:var(--cy)}@keyframes ld{to{opacity:0;visibility:hidden}}
+img{max-width:100%;display:block}a{color:var(--cy)}:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.w{max-width:1120px;margin:auto;padding:0 22px}section{padding:96px 0}
+h2{font:600 clamp(30px,4.4vw,50px)/1.1 var(--head);letter-spacing:-.02em;margin-bottom:12px}
+h3{font:600 19px/1.35 var(--head)}.lede{max-width:640px;color:var(--mu);margin-bottom:38px}.mono{font:12.5px var(--mono);color:var(--mu)}
+nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:min(1200px,calc(100% - 24px));z-index:30;background:rgba(9,20,38,.72);backdrop-filter:blur(14px);border:1px solid var(--bd);border-radius:14px}
+nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-width:none}
+.logo{font:700 18px var(--head);color:var(--tx);text-decoration:none;letter-spacing:.06em}.logo b{color:var(--cy)}
+#menu{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1}
+#menu a{color:var(--mu);text-decoration:none;font-size:13px;white-space:nowrap;padding:6px 10px;border-radius:8px;transition:.2s}#menu a:hover{color:var(--tx)}#menu a.on{color:var(--cy);background:rgba(0,217,255,.08)}
+.nr{display:flex;gap:8px}.nr .btn{padding:7px 14px;font-size:13px}.hb{display:none;margin-left:auto;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;width:40px;height:36px;font-size:18px;cursor:pointer}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;border:1px solid var(--cy);background:var(--cy);color:#04111f;text-decoration:none;font:600 14px var(--sans);cursor:pointer;transition:box-shadow .25s,transform .15s}
+.btn:hover{box-shadow:0 0 24px rgba(0,217,255,.45)}.btn.o{background:none;color:var(--cy)}.btn.o:hover{background:rgba(0,217,255,.1)}
+.hero{padding:150px 0 90px}.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero h1{font:700 clamp(40px,6vw,74px)/1.04 var(--head);letter-spacing:-.03em;margin:16px 0 22px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--cy),var(--bl));-webkit-background-clip:text;background-clip:text;color:transparent}
+.d{max-width:540px;color:var(--mu)}.cta{display:flex;gap:10px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 22px;max-width:540px}
+.facts div{background:rgba(16,31,53,.6);backdrop-filter:blur(8px);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--mu)}.facts b{display:block;font:700 22px var(--head);color:var(--ice)}
+.soc{display:flex;gap:20px;font-size:14px}.soc a{color:var(--mu);text-decoration:none}.soc a:hover{color:var(--cy)}
+.pw{position:relative;padding:26px}.ring{position:absolute;inset:-4px;border:1px dashed rgba(165,243,252,.28);border-radius:50%;pointer-events:none}.r2{inset:40px -26px;border:1px solid rgba(59,130,246,.22)}
+.fl{position:absolute;background:rgba(16,31,53,.85);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:10px;padding:9px 13px;font:12px var(--mono);color:var(--ice)}.f1{left:-8px;bottom:64px}.f2{right:-8px;top:54px}
+.ph{position:relative;background:var(--card);border:1px solid var(--bd);overflow:hidden;border-radius:10px}.ph img{width:100%;height:100%;object-fit:cover}
+.ph .miss{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:12px;font:12px var(--mono);color:var(--mu);word-break:break-all}.ph.bad .miss{display:flex}.ph.bad img{display:none}
+.portrait{aspect-ratio:4/5;border-radius:18px;border-color:rgba(0,217,255,.4);box-shadow:0 0 70px rgba(0,217,255,.2)}
+.fx{display:flex;gap:6px;flex-wrap:wrap}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--bd);background:rgba(21,41,67,.75);border-radius:8px;padding:4px 10px;font-size:13px}
+.chip img,.tile img{background:#F1F5F9;border-radius:4px;padding:1px}.chip img{width:16px;height:16px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:56px}.pad{padding-top:6px}
+.tl{border-left:1px solid var(--bd);padding-left:28px;display:grid;gap:28px}.tl>div{position:relative}.tl>div:before{content:"";position:absolute;left:-34px;top:8px;width:11px;height:11px;background:var(--cy);border-radius:50%;box-shadow:0 0 12px var(--cy)}
+.tl h3{font-size:17px}.when{font:12.5px var(--mono);color:var(--cy)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:rgba(16,31,53,.7);border:1px solid var(--bd);border-radius:14px;padding:22px;backdrop-filter:blur(8px);transition:border-color .25s,box-shadow .25s}.card:hover{border-color:rgba(0,217,255,.45);box-shadow:0 0 30px rgba(0,217,255,.08)}
+.card.pj{padding:0;overflow:hidden;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%}.pj .ph{aspect-ratio:16/10;border:0;border-radius:0;border-bottom:1px solid var(--bd)}.pj .b{padding:18px}.pj p{font-size:14.5px;color:var(--mu);margin:6px 0 12px}
+#pgrid{grid-template-columns:repeat(3,1fr)}#pgrid>:nth-child(5n+1){grid-column:span 2}#pgrid>:nth-child(5n+1) .ph{aspect-ratio:21/9}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.tabs button{border:1px solid var(--bd);background:none;color:var(--mu);border-radius:8px;padding:7px 15px;cursor:pointer;font:500 13px var(--sans)}.tabs button[aria-pressed=true]{border-color:var(--cy);color:var(--cy);background:rgba(0,217,255,.08)}
+.sk{display:grid;grid-template-columns:230px 1fr;gap:34px}.skc{display:grid;gap:6px;align-content:start}
+.skc button{text-align:left;padding:11px 14px;border:1px solid var(--bd);border-radius:10px;background:rgba(16,31,53,.6);cursor:pointer;font:500 14px var(--sans);color:var(--mu)}.skc button[aria-pressed=true]{border-color:var(--cy);color:var(--cy)}
+.skp{display:flex;flex-wrap:wrap;gap:14px;align-content:flex-start}.tile{width:116px;border:1px solid var(--bd);border-radius:12px;background:rgba(16,31,53,.7);padding:16px 8px;text-align:center;font-size:13px}.tile img{width:38px;height:38px;margin:0 auto 8px}
+.tile i{display:grid;place-items:center;width:38px;height:38px;margin:0 auto 8px;background:var(--el);border-radius:8px;font:700 15px var(--head);color:var(--cy);font-style:normal}
+.feat{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(0,217,255,.3);background:rgba(16,31,53,.7);border-radius:16px;overflow:hidden;box-shadow:0 0 60px rgba(0,217,255,.07)}
+.feat .ph{min-height:340px;border:0;border-radius:0}.feat .tx{padding:34px}.feat dl{display:grid;grid-template-columns:90px 1fr;gap:6px 14px;font-size:14px;margin:16px 0}dt{font:12.5px var(--mono);color:var(--mu)}dd{margin:0}
+.big{font:700 clamp(70px,12vw,140px)/1 var(--head);background:linear-gradient(90deg,var(--cy),var(--bl));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;margin-bottom:34px}.stat p{color:var(--mu)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;background:rgba(16,31,53,.6)}th,td{padding:12px 14px;border:1px solid var(--bd);text-align:left}th{background:var(--el);font-weight:500;color:var(--ice)}
+.g{columns:3 240px;column-gap:14px}.g button{display:block;width:100%;margin:0 0 14px;padding:0;border:1px solid var(--bd);border-radius:10px;overflow:hidden;background:none;cursor:zoom-in;break-inside:avoid}.g .ph{aspect-ratio:var(--r,4/3);border:0;border-radius:0}.g .cap{padding:7px 10px;font:12px var(--mono);color:var(--mu);text-align:left;background:var(--card)}
+#lb{position:fixed;inset:0;background:rgba(5,11,24,.95);display:none;z-index:60;align-items:center;justify-content:center;flex-direction:column;padding:20px}#lb.on{display:flex}#lb img{max-height:80vh;max-width:94vw;object-fit:contain}#lb p{color:var(--mu);margin-top:12px;font:13px var(--mono)}
+#lb button{position:absolute;background:none;border:1px solid var(--bd);color:#fff;font-size:24px;width:46px;height:46px;border-radius:10px;cursor:pointer}#lbx{top:16px;right:16px}#lbp{left:16px}#lbn{right:16px}
+dialog{border:1px solid rgba(0,217,255,.35);border-radius:16px;padding:0;max-width:760px;width:94vw;max-height:90vh;overflow:auto;background:var(--bg2);color:var(--tx)}dialog::backdrop{background:rgba(5,11,24,.8)}dialog .ph{aspect-ratio:16/8;border:0;border-radius:0}dialog .in{padding:28px}
+dialog h4{font:12.5px var(--mono);color:var(--cy);margin:18px 0 6px;font-weight:400}dialog ul{padding-left:20px}
+#contact{background:linear-gradient(180deg,transparent,#091426 35%,#0a2644)}form{display:grid;gap:14px}label{font:500 13px var(--sans);color:var(--ice);display:grid;gap:5px}
+input,textarea{padding:12px;border:1px solid var(--bd);border-radius:10px;background:rgba(5,11,24,.7);color:var(--tx);font:inherit}
+footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padding:34px 0;font-size:14px}footer a{color:var(--ice);text-decoration:none}footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.dis{opacity:.5;pointer-events:none}.rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:no-preference){.ring{animation:spin 50s linear infinite}.r2{animation-direction:reverse;animation-duration:70s}@keyframes spin{to{transform:rotate(360deg)}}body:before{animation:gr 30s linear infinite}@keyframes gr{to{background-position:0 56px,56px 0}}}
+@media(max-width:900px){.hg,.cols,.feat,.sk,.stat{grid-template-columns:1fr}.stat{gap:10px}.pw{max-width:420px}.skc{grid-template-columns:1fr 1fr}#pgrid{grid-template-columns:1fr}#pgrid>:nth-child(5n+1){grid-column:auto}.hb{display:block}.nr .btn:first-child{display:none}
+#menu{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:rgba(9,20,38,.97);border:1px solid var(--bd);border-radius:12px;padding:10px}#menu.open{display:flex}.nr{margin-left:0}}
+.art{position:absolute;inset:0;display:grid;place-items:center;padding:16px;text-align:center;font:600 20px/1.25 var(--head);color:rgba(165,243,252,.5);background:radial-gradient(circle at 25% 15%,rgba(0,217,255,.16),transparent 60%),var(--card)}
+</style></head><body><div id="glow"></div><div id="ld">NILOY<b>.</b></div>
+<nav><div class="w"><a class="logo" href="#home">NILOY<b>.</b></a><button class="hb" aria-label="Menu" aria-expanded="false">☰</button><div id="menu"></div><div class="nr"><a class="btn" href="cv/Niloy-CV.pdf" download>Download CV</a><a class="btn o" href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></div></div></nav>
+
+<header id="home" class="hero"><div class="w hg"><div>
+<p class="mono">Software Engineer | Full-Stack Developer | Digital Solutions Builder</p>
+<h1>Building <em>Intelligent</em> Solutions Through <em>Code.</em></h1>
+<p class="d">I'm MD. Shoadul Islam Niloy, a Computer Science and Engineering graduate from Daffodil International University, passionate about software engineering, artificial intelligence, and innovative technology.</p>
+<div class="cta" style="margin:28px 0"><a class="btn" href="#projects">Explore My Work</a><a class="btn o" href="cv/Niloy-CV.pdf" download>Download Resume</a></div>
+<div class="facts"><div><b><span data-n="100">100</span>+</b>Problems solved on beecrowd</div><div><b>IIT Bombay</b>Visiting student, Autumn 2024</div><div><b>IEEE Access</b>FlashViT, published research</div><div><b><span data-n="10">10</span></b>Software and research projects</div></div>
+<div class="soc"><a href="mailto:soadulniloy@gmail.com">Email</a><a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.soadulniloy.me" target="_blank" rel="noopener">Website</a></div></div>
+<div class="pw"><i class="ring"></i><i class="ring r2"></i><div class="ph portrait" data-img="portrait.jpg" data-alt="Portrait of MD. Shoadul Islam Niloy"></div><span class="fl f1">FlashViT · IEEE Access</span><span class="fl f2">IIT Bombay · Autumn 2024</span></div></div></header>
+
+<section id="about"><div class="w cols"><div><h2>About</h2>
+<p>I am a Computer Science and Engineering graduate from Daffodil International University, passionate about software development, problem-solving, artificial intelligence, and building practical digital solutions.</p><br>
+<p>My experience spans web development, mobile application development, machine learning, IoT, database-driven applications, and UI/UX design. I have also completed an international student exchange programme at IIT Bombay, India.</p><br>
+<p>Alongside my technical journey, I have developed leadership, communication, teamwork, and organizational skills through student organizations, competitive programming, and extracurricular activities. My goal is to create useful, scalable, and user-focused digital products while continuously growing as a software professional.</p>
+<h3 style="margin-top:26px">Interests</h3><div class="fx pad" id="interests"></div></div>
+<div class="ph" style="aspect-ratio:4/5" data-img="about-profile.jpg" data-alt="Niloy, profile photograph"></div></div></section>
+
+<section id="education"><div class="w"><h2>Education</h2><p class="lede">An academic path from Dhaka to Mumbai and back.</p>
+<div class="cols"><div class="tl">
+<div><span class="when">Graduated June 2026</span><h3>B.Sc. in Computer Science and Engineering</h3>Daffodil International University · CGPA 3.58 / 4.00</div>
+<div><span class="when">Autumn 2024</span><h3>Visiting / Exchange Student</h3>Indian Institute of Technology Bombay, India</div>
+<div><span class="when">2020</span><h3>HSC · GPA 5.00</h3>BCIC College, Dhaka · Board: Dhaka</div>
+<div><span class="when">2018</span><h3>SSC · GPA 5.00</h3>Shaheed Police Smrity College · Board: Dhaka</div></div>
+<div class="ph" style="aspect-ratio:4/3" data-img="diu-campus.jpg" data-alt="Daffodil International University campus"></div></div></div></section>
+
+<section id="iitb"><div class="w"><h2>IIT Bombay: Academic Journey</h2><p class="lede">Visiting / Exchange Student, Autumn 2024. Select a course to see its learning area.</p>
+<div class="cols"><div><div class="tabs" id="courses"></div><div class="card" id="cinfo" aria-live="polite">Select a course.</div>
+<p class="mono" style="margin-top:12px">Note: EE353 title/code to be checked against the official academic record.</p></div>
+<div class="ph" style="aspect-ratio:4/3" data-img="iit-bombay-campus.jpg" data-alt="IIT Bombay campus"></div></div></div></section>
+
+<section id="travel"><div class="w"><h2>IIT Bombay: Travel &amp; Exploration</h2><p class="lede">Separate from coursework: personal travel and exploration across Mumbai and Maharashtra.</p>
+<div class="cols"><div><h3>Places visited</h3><div class="fx pad" id="places"></div><h3 style="margin-top:24px">Experiences</h3><div class="fx pad" id="exps"></div></div>
+<div class="ph" style="aspect-ratio:16/10" data-img="WhatsApp Image 2026-11-15 at 16.21.46 (1).jpeg" data-alt="Travel photograph from India"></div></div></div></section>
+
+<section id="experience"><div class="w"><h2>Professional Experience</h2>
+<div class="tl" style="max-width:760px"><div><span class="when">2 months</span><h3>Software Testing Intern / QA Intern</h3>Reclaim Protocol Limited
+<ul style="margin:10px 0 0 18px"><li>Tested application features and functionalities.</li><li>Validated software fixes and expected behaviour.</li><li>Identified and reported software issues.</li><li>Prepared bug reports.</li><li>Supported software quality assurance activities.</li><li>Collaborated with distributed team members.</li></ul></div></div></div></section>
+
+<section id="growth"><div class="w"><h2>Technical Growth</h2><p class="lede">How the toolkit developed over time.</p>
+<div class="tl" id="growthTl"></div></div></section>
+
+<section id="skills"><div class="w"><h2>Technical Skills</h2><p class="lede">Grouped by specialization. Choose a category.</p>
+<div class="sk"><div class="skc" id="skc"></div><div><div class="skp" id="skp" aria-live="polite"></div></div></div>
+<h3 style="margin-top:34px">Additional skills</h3><div class="fx pad" id="addl"></div></div></section>
+
+<section id="projects"><div class="w"><h2>Featured Projects</h2><p class="lede">Ten approved projects. Select any card for the full details.</p>
+<div class="tabs" id="filters"></div><div class="grid3" id="pgrid"></div></div></section>
+
+<section id="research"><div class="w"><h2>Research &amp; Publications</h2><p class="lede">Computer vision, deep learning, Vision Transformers, and explainable AI.</p>
+<div class="feat"><div class="ph" data-img="Flashvit.jpg.png" data-alt="FlashViT research visualization"></div><div class="tx">
+<span class="when">Published in IEEE Access</span><h3 style="font-size:24px;margin:6px 0">FlashViT: A Memory-Efficient and Explainable Vision Transformer for Multi-Class Sweet Orange Disease Classification</h3>
+<p>A memory-efficient Vision Transformer for multi-class sweet orange disease classification, with explainability features that make model predictions more interpretable.</p>
+<dl><dt>Journal</dt><dd>IEEE Access</dd><dt>DOI</dt><dd>10.1109/ACCESS.2026.3738311</dd><dt>Stack</dt><dd>Python, PyTorch, Scikit-learn, NumPy, Pandas, Deep Learning, Vision Transformer</dd></dl>
+<a class="btn" href="https://doi.org/10.1109/ACCESS.2026.3738311" target="_blank" rel="noopener">Read the paper (DOI)</a></div></div>
+<div class="card" style="margin-top:22px"><h3>Neuro-Symbolic AI: Final Year Design Project</h3><p style="margin:6px 0">An academic project exploring the integration of neural learning and symbolic reasoning toward an explainable AI framework. Technologies: Python, PyTorch, Scikit-learn, NumPy, Pandas.</p></div></div></section>
+
+<section id="cp"><div class="w"><h2>Competitive Programming</h2>
+<div class="stat"><div class="big">100+</div><div><h3>Problems solved on URI Online Judge (beecrowd)</h3><p>Practical experience in algorithmic thinking, programming fundamentals, logical reasoning, and problem-solving.</p></div></div>
+<table><thead><tr><th>Contest</th><th>Preliminary round</th><th>Main round</th></tr></thead><tbody>
+<tr><td>DIU Takeoff Intra University Programming Contest 2022</td><td>Position 76</td><td>Position 117</td></tr>
+<tr><td>Unlock The Algorithm 2024 Programming Contest</td><td>Position 28</td><td>Position 96</td></tr></tbody></table></div></section>
+
+<section id="leadership"><div class="w"><h2>Leadership &amp; Achievements</h2><div class="cols"><div class="tl">
+<div><span class="when">2026–2027</span><h3>President, DIU Karate-Do Club</h3>Club leadership, organizational activities, student engagement, and coordination of club initiatives.</div>
+<div><span class="when">2025–2026</span><h3>Former Program Secretary, DIU Karate-Do Club</h3>Programme coordination, club activities, and organizational support.</div>
+<div><span class="when">Former</span><h3>Core Member, DIU Robotics Club</h3>Participated in student-led robotics club activities.</div></div>
+<div class="grid3" style="grid-template-columns:1fr"><div class="card"><span class="when">2025</span><h3>Bronze Medalist</h3>BKO Cup, 6th International Open Karate Championship 2025 · Male Kumite</div>
+<div class="card"><span class="when">2015</span><h3>3rd Place</h3>Prothom Alo Biggan Joyotsob 2015 · Science Olympiad, Junior Segment</div></div></div></div></section>
+
+<section id="business"><div class="w"><h2>Niloy's Digital Solutions</h2><p class="lede">A digital solutions initiative focused on helping businesses and organizations improve their digital presence, operations, and technological capabilities.</p>
+<div class="grid3" id="svc"></div></div></section>
+
+<section id="beyond"><div class="w"><h2>Beyond the Keyboard</h2><div class="grid3">
+<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="Bicycle.jpg" data-alt="Mountain biking"></div><h3>Mountain Biking</h3>Bicycle-based outdoor adventures.</div>
+<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="karate-competition.jpg" data-alt="Karate competition"></div><h3>Karate</h3>Martial arts, discipline, and physical development.</div>
+<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="WhatsApp Image 2026-11-15 at 16.21.46 (2).jpeg" data-alt="Travel and adventure"></div><h3>Travel &amp; Adventure</h3>New places, trekking, and outdoor experiences.</div></div></div></section>
+
+<section id="gallery"><div class="w"><h2>Photography Gallery</h2><p class="lede">Select a photograph to enlarge. Use arrow keys to browse.</p><div class="g" id="gal"></div></div></section>
+
+<section id="contact"><div class="w cols"><div><h2>Have an Interesting Idea? Let's Build Something Great.</h2><p>I am open to professional opportunities, software development collaborations, technology projects, and conversations about building useful digital products.</p><br><p><i>Have a project or an opportunity in mind? Let's connect and build something meaningful.</i></p><br>
+<p><b>Email</b><br><a href="mailto:soadulniloy@gmail.com">soadulniloy@gmail.com</a></p><br><p><b>LinkedIn</b><br><a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">linkedin.com/in/soadulniloy</a></p><br><p><b>Website</b><br><a href="https://www.soadulniloy.me" target="_blank" rel="noopener">soadulniloy.me</a></p></div>
+<form id="cf"><label>Your name<input name="name" required autocomplete="name"></label><label>Your email<input type="email" name="email" required autocomplete="email"></label><label>Message<textarea name="msg" rows="6" required></textarea></label>
+<button class="btn" type="submit">Send message</button><p class="mono" id="cstat" role="status"></p></form></div></section>
+
+<footer><div class="w"><div><b class="logo">NILOY<b>.</b></b><br>© 2026 MD. Shoadul Islam Niloy</div><div><a href="#about">About</a> · <a href="#projects">Projects</a> · <a href="#research">Research</a> · <a href="#contact">Contact</a> · <a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">LinkedIn</a></div><a href="#home">Back to top ↑</a></div></footer>
+
+<div id="lb" role="dialog" aria-label="Image viewer"><button id="lbx" aria-label="Close">×</button><button id="lbp" aria-label="Previous">‹</button><img alt=""><p></p><button id="lbn" aria-label="Next">›</button></div>
+<dialog id="pd"></dialog>
+
+<script>
+const BASE="images/"; // folder holding your photos. Use "" if photos sit beside index.html
+const $=s=>document.querySelector(s),el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!==undefined)e.innerHTML=h;return e};
+const dev={C:'c',Java:'java',PHP:'php',Python:'python',Dart:'dart',HTML:'html5',CSS:'css3',React:'react',TypeScript:'typescript',Vite:'vitejs','Node.js':'nodejs','Express.js':'express',MySQL:'mysql','MongoDB Atlas':'mongodb',MongoDB:'mongodb','Firebase Authentication':'firebase',Flutter:'flutter',PyTorch:'pytorch','Scikit-learn':'scikitlearn',NumPy:'numpy',Pandas:'pandas',Arduino:'arduino','Adobe XD':'xd'};
+const logo=n=>dev[n]?`<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${dev[n]}/${dev[n]}-original.svg" alt="" loading="lazy" onerror="this.remove()">`:'';
+const chips=a=>a.map(x=>`<span class="chip">${logo(x)}${x}</span>`).join('');
+// images with graceful placeholder
+function img(ph){const f=ph.dataset.img;ph.setAttribute('role','img');ph.setAttribute('aria-label',ph.dataset.alt);
+ ph.innerHTML=`<img src="${BASE+encodeURI(f)}" alt="${ph.dataset.alt}" loading="lazy"><span class="miss">Image needed:<br>${f}</span>`;
+ ph.firstChild.onerror=()=>ph.classList.add('bad')}
+const imgs=()=>document.querySelectorAll('.ph[data-img]:not(:has(img)):not(.bad)').forEach(img);
+// nav
+const secs=[['about','About'],['education','Education'],['iitb','IIT Bombay'],['travel','Travel'],['experience','Experience'],['growth','Growth'],['skills','Skills'],['projects','Projects'],['research','Research'],['cp','Programming'],['leadership','Leadership'],['business','Digital Solutions'],['beyond','Beyond'],['gallery','Gallery'],['contact','Contact']];
+$('#menu').innerHTML=secs.map(s=>`<a href="#${s[0]}">${s[1]}</a>`).join('');
+$('#interests').innerHTML=chips(['Software Engineering','Full-Stack Development','Web Applications','Mobile Applications','AI & Machine Learning','Research & Innovation','Digital Solutions']);
+// IIT courses
+const courses=[['CS317','Database and Information Systems (DBIS)','Database and Information Systems'],['CS348','Networks','Computer Networks'],['CS626','NLP and Web','Natural Language Processing; Web Technologies'],['CS378','Networks Lab','Computer Networks (lab)'],['EE353','Introduction to Data Science and Machine Learning','Data Science; Machine Learning']];
+courses.forEach((c,i)=>{const b=el('button','',c[0]);b.setAttribute('aria-pressed',i==0);b.onclick=()=>{document.querySelectorAll('#courses button').forEach(x=>x.setAttribute('aria-pressed',x==b));$('#cinfo').innerHTML=`<h3>${c[0]}: ${c[1]}</h3><p style="margin-top:6px">Learning area: ${c[2]}</p>`};$('#courses').append(b);if(!i)b.click()});
+$('#places').innerHTML=chips(['Gateway of India, Mumbai','Atal Setu','Elephanta Caves','Juhu Beach','Versova Beach','Ratangad Trek']);
+$('#exps').innerHTML=chips(['Midnight Cycling','Mumbai Local Train Journey','Exploring Mumbai','Trekking and outdoor adventures']);
+// growth
+const growth=[['Programming foundations',['C','Java','PHP']],['Web development',['HTML','CSS','PHP']],['Database-driven applications',['MySQL','MongoDB']],['Mobile application development',['Flutter','Dart']],['AI and machine learning',['Python','PyTorch','Scikit-learn','NumPy','Pandas']],['IoT development',['Arduino','Soil Moisture Sensors']],['UI/UX design',['Adobe XD']],['Currently learning',['Full-Stack Web Development (MERN)','Laravel MVC']]];
+$('#growthTl').innerHTML=growth.map(g=>`<div><h3>${g[0]}</h3><div class="fx pad">${chips(g[1])}</div></div>`).join('');
+// skills
+const sk={'Programming':['C','Java','PHP','Python','Dart'],'Frontend & Web':['HTML','CSS','React','TypeScript','Vite'],'Backend & Database':['Node.js','Express.js','PHP','MySQL','MongoDB Atlas','Firebase Authentication'],'Mobile':['Flutter','Dart'],'AI / ML':['PyTorch','Scikit-learn','NumPy','Pandas','Machine Learning','Deep Learning','Vision Transformers','Explainable AI'],'IoT & Hardware':['Arduino','Soil Moisture Sensors'],'UI/UX Design':['Adobe XD','UI/UX Design']};
+Object.keys(sk).forEach((k,i)=>{const b=el('button','',k);b.onclick=()=>{document.querySelectorAll('#skc button').forEach(x=>x.setAttribute('aria-pressed',x==b));$('#skp').innerHTML=sk[k].map(n=>`<div class="tile">${dev[n]?logo(n):`<i>${n[0]}</i>`}${n}</div>`).join('')};$('#skc').append(b);if(!i)b.click()});
+$('#addl').innerHTML=chips(['Programming Problem Solving','Software Testing','Troubleshooting','Presentation','Hosting','Computer Hardware and Software Knowledge','Teaching and Private Tuition','Communication','Public Relations','Multilingual Communication','Team Collaboration']);
+// projects
+const P=[
+{t:'FlashViT',c:'AI & Research',cat:'Artificial Intelligence / Deep Learning / Research',img:'Flashvit.jpg.png',ov:'A research project developing a memory-efficient Vision Transformer for multi-class sweet orange disease classification, with explainability features that make predictions more interpretable. Published in IEEE Access (DOI 10.1109/ACCESS.2026.3738311).',f:['Vision Transformer-based disease classification','Memory-efficient model design','Explainable AI','Multi-class sweet orange disease classification','Deep learning research'],s:['Python','PyTorch','Scikit-learn','NumPy','Pandas','Deep Learning','Vision Transformer'],doi:1},
+{t:'GhotokderBari',c:'Web',cat:'Matrimonial Platform / Startup Project',ov:'A bilingual Bengali and English matrimonial platform designed to connect people seeking meaningful marriage relationships, targeting users in Bangladesh and the Bangladeshi diaspora.',f:['Bengali and English interface','Matrimonial profile platform','Matchmaking and connection features','Paid matchmaking packages'],s:['React','TypeScript','Vite','Node.js','Express.js','MongoDB Atlas','Firebase Authentication','ImgBB'],note:'Business planning targets (not verified revenue): initial planned investment ৳10,000; target market Bangladesh + Diaspora; planned team of 4–5; monthly income target ৳100,000.'},
+{t:"NILOY'S Game Shop",c:'Web',cat:'E-commerce / Database-Driven Web Application',ov:'A web-based game shop developed to present and manage gaming-related products through a website.',f:[],s:['PHP','HTML','CSS','MySQL']},
+{t:'Tourist Management System',c:'Web',cat:'Web Application',ov:'A web-based tourist management project designed to organize tourism-related information and provide a structured interface for users.',f:[],s:['PHP','HTML','CSS']},
+{t:'To-Do List Application',c:'Mobile',cat:'Cross-Platform Mobile Application',ov:'A cross-platform task management application developed using Flutter and a PHP backend, supporting CRUD operations and backend integration.',f:['Task creation','Task viewing','Task updating','Task deletion','Backend integration'],s:['Flutter','Dart','PHP','MySQL']},
+{t:'Parking Management System',c:'Systems & IoT',cat:'C Programming Project',ov:'A C-based project focused on automation logic for parking management and optimization.',f:['Parking management logic','Automated operations','Parking optimization'],s:['C']},
+{t:'Smart Irrigation System',c:'Systems & IoT',cat:'IoT / Embedded System',ov:'An Arduino-based project designed to automate irrigation control using soil moisture sensing.',f:['Soil moisture sensing','Automated irrigation control','Sensor-based decision-making'],s:['Arduino','Soil Moisture Sensor']},
+{t:'Bank Management System',c:'Systems & IoT',cat:'Object-Oriented Programming',ov:'A Java-based bank management application demonstrating object-oriented programming through account management and transaction operations.',f:['Account management','Transaction operations','Object-oriented application structure'],s:['Java','Object-Oriented Programming (OOP)']},
+{t:'Brainberry: All-in-One App',c:'Design',cat:'UI/UX Design',ov:'A multi-purpose application interface designed with a focus on usability and user experience.',f:['User-focused interface','Multi-purpose application concept','UI/UX design'],s:['Adobe XD','UI/UX Design']},
+{t:'Neuro-Symbolic AI: FYDP',c:'AI & Research',cat:'Final Year Design Project / Academic Research',ov:'An academic project exploring the combination of neural-network-based learning and symbolic reasoning to develop an explainable AI framework.',f:['Neural network-based learning','Symbolic reasoning','Explainable AI concepts','Integration of learning-based and rule-based approaches'],s:['Python','PyTorch','Scikit-learn','NumPy','Pandas']}];
+const cats=['All','AI & Research','Web','Mobile','Systems & IoT','Design'];let cur='All';
+function draw(){$('#pgrid').innerHTML='';P.forEach((p,i)=>{if(cur!='All'&&p.c!=cur)return;const b=el('button','card pj');
+ b.innerHTML=`<div class="ph" ${p.img?`data-img="${p.img}" data-alt="${p.t}"`:''}>${p.img?'':`<span class="art">${p.t}</span>`}</div><div class="b"><span class="mono">${p.cat}</span><h3>${p.t}</h3><p>${p.ov.slice(0,110)}…</p><div class="fx">${p.s.slice(0,4).map(x=>`<span class="chip">${x}</span>`).join('')}</div></div>`;
+ b.onclick=()=>open(i);$('#pgrid').append(b)});imgs()}
+cats.forEach(c=>{const b=el('button','',c);b.setAttribute('aria-pressed',c==cur);b.onclick=()=>{cur=c;document.querySelectorAll('#filters button').forEach(x=>x.setAttribute('aria-pressed',x==b));draw()};$('#filters').append(b)});
+function open(i){const p=P[i],d=$('#pd');d.innerHTML=`${p.img?`<div class="ph" data-img="${p.img}" data-alt="${p.t}"></div>`:''}<div class="in"><span class="mono">${p.cat}</span><h3 style="font-size:28px">${p.t}</h3><p style="margin-top:8px">${p.ov}</p>
+${p.f.length?`<h4>Key features / focus</h4><ul>${p.f.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}<h4>Technology stack</h4><div class="fx">${chips(p.s)}</div>${p.note?`<h4>Note</h4><p>${p.note}</p>`:''}
+<h4>Links</h4><div class="cta">${p.doi?'<a class="btn" href="https://doi.org/10.1109/ACCESS.2026.3738311" target="_blank" rel="noopener">Publication (DOI)</a>':''}<span class="btn o dis">GitHub link not yet supplied</span><span class="btn o dis">Live demo not yet supplied</span></div>
+<div class="cta" style="margin-top:20px"><button class="btn o" onclick="$('#pd').close()">Close</button></div></div>`;d.showModal();imgs()}
+$('#pd').addEventListener('click',e=>{if(e.target==$('#pd'))$('#pd').close()});
+// services
+$('#svc').innerHTML=['Custom Software Solutions','Digital Transformation for Businesses','Business Website Development','IoT Projects','Digital Solutions'].map(s=>`<div class="card"><h3>${s}</h3></div>`).join('');
+// gallery
+const G=[['karate-competition.jpg','Karate competition'],['karate-competition (1).jpeg','Karate competition'],['karate-competition (2).jpeg','Karate competition'],['karate-competition (3).jpeg','Karate competition'],['karate-competition (4).jpeg','Karate competition'],['karate-competition (5).jpeg','Karate competition'],['karate-competition (6).jpeg','Karate competition'],['Bicycle.jpg','Mountain biking'],['Bicycle.jpeg','Mountain biking'],['iit-bombay-campus.jpg','IIT Bombay campus'],['diu-campus.jpg','DIU campus'],['diu-niloy-campus-01.jpg','At DIU campus'],['diu-niloy-university-life.jpg','University life at DIU'],['WhatsApp Image 2026-11-15 at 16.21.46 (1).jpeg','Travel photograph'],['WhatsApp Image 2026-11-15 at 16.21.46 (2).jpeg','Travel photograph'],['WhatsApp Image 2026-11-15 at 16.21.47 (1).jpeg','Travel photograph'],['WhatsApp Image 2026-11-15 at 16.21.47 (2).jpeg','Travel photograph']];
+const ratios=['4/3','3/4','1/1','4/5','3/2'];
+G.forEach((g,i)=>{const b=el('button');b.setAttribute('aria-label','Enlarge: '+g[1]);b.style.setProperty('--r',ratios[i%5]);b.innerHTML=`<div class="ph" data-img="${g[0]}" data-alt="${g[1]}"></div><div class="cap">${g[1]}</div>`;b.onclick=()=>lb(i);$('#gal').append(b)});
+let li=0;const L=$('#lb');function lb(i){li=(i+G.length)%G.length;L.querySelector('img').src=BASE+encodeURI(G[li][0]);L.querySelector('img').alt=G[li][1];L.querySelector('p').textContent=G[li][1]+'  ('+(li+1)+'/'+G.length+')';L.classList.add('on')}
+$('#lbx').onclick=()=>L.classList.remove('on');$('#lbp').onclick=()=>lb(li-1);$('#lbn').onclick=()=>lb(li+1);L.onclick=e=>{if(e.target==L)L.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(!L.classList.contains('on'))return;if(e.key=='Escape')L.classList.remove('on');if(e.key=='ArrowLeft')lb(li-1);if(e.key=='ArrowRight')lb(li+1)});
+// contact: opens the visitor's mail app. To send server-side, POST the same fields to a backend (e.g. Formspree/Netlify Forms/own Express route) in place of the mailto below.
+$('#cf').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);location.href=`mailto:soadulniloy@gmail.com?subject=${encodeURIComponent('Portfolio message from '+f.get('name'))}&body=${encodeURIComponent(f.get('msg')+'\n\nReply to: '+f.get('email'))}`;$('#cstat').textContent='Your email app should open with the message ready to send.'};
+draw();imgs();
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const hb=$('.hb');hb.onclick=()=>{const o=$('#menu').classList.toggle('open');hb.setAttribute('aria-expanded',o)};$('#menu').onclick=()=>$('#menu').classList.remove('open');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.06});
+if(!rm)document.querySelectorAll('section .w').forEach(e=>{e.classList.add('rv');io.observe(e)});
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('#menu a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('section[id]').forEach(x=>so.observe(x));
+if(!rm)document.querySelectorAll('[data-n]').forEach(x=>{const n=+x.dataset.n;let t0;const f=t=>{t0=t0||t;const p=Math.min((t-t0)/1300,1);x.textContent=Math.round(n*p);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)});
+if(matchMedia('(pointer:fine)').matches&&!rm){addEventListener('pointermove',e=>{$('#glow').style.transform=`translate(${e.clientX}px,${e.clientY}px)`});
+document.querySelectorAll('.btn').forEach(b=>{b.onpointermove=e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.12}px,${(e.clientY-r.top-r.height/2)*.2}px)`};b.onpointerleave=()=>b.style.transform=''})}
+</script></body></html><!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NILOY. | MD. Shoadul Islam Niloy: Software Engineer & Researcher</title><meta name="theme-color" content="#050B18">
+<meta name="description" content="Portfolio of MD. Shoadul Islam Niloy: CSE graduate, IIT Bombay exchange student, IEEE Access author, full-stack developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050B18;--bg2:#091426;--card:#101F35;--el:#152943;--cy:#00D9FF;--bl:#3B82F6;--ice:#A5F3FC;--tx:#F1F5F9;--mu:#94A3B8;--bd:rgba(148,163,184,.16);--head:Sora,system-ui,sans-serif;--sans:Inter,system-ui,sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.45;background:linear-gradient(var(--bd) 1px,transparent 1px) 0 0/56px 56px,linear-gradient(90deg,var(--bd) 1px,transparent 1px) 0 0/56px 56px;mask-image:radial-gradient(ellipse at 50% 15%,#000,transparent 75%)}
+#glow{position:fixed;left:0;top:0;width:520px;height:520px;margin:-260px 0 0 -260px;background:radial-gradient(circle,rgba(0,217,255,.1),transparent 65%);pointer-events:none;z-index:-1}
+#ld{position:fixed;inset:0;z-index:99;background:var(--bg);display:grid;place-items:center;font:700 34px var(--head);letter-spacing:.1em;animation:ld .5s .9s forwards}#ld b{color:var(--cy)}@keyframes ld{to{opacity:0;visibility:hidden}}
+img{max-width:100%;display:block}a{color:var(--cy)}:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.w{max-width:1120px;margin:auto;padding:0 22px}section{padding:96px 0}
+h2{font:600 clamp(30px,4.4vw,50px)/1.1 var(--head);letter-spacing:-.02em;margin-bottom:12px}
+h3{font:600 19px/1.35 var(--head)}.lede{max-width:640px;color:var(--mu);margin-bottom:38px}.mono{font:12.5px var(--mono);color:var(--mu)}
+nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:min(1200px,calc(100% - 24px));z-index:30;background:rgba(9,20,38,.72);backdrop-filter:blur(14px);border:1px solid var(--bd);border-radius:14px}
+nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-width:none}
+.logo{font:700 18px var(--head);color:var(--tx);text-decoration:none;letter-spacing:.06em}.logo b{color:var(--cy)}
+#menu{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1}
+#menu a{color:var(--mu);text-decoration:none;font-size:13px;white-space:nowrap;padding:6px 10px;border-radius:8px;transition:.2s}#menu a:hover{color:var(--tx)}#menu a.on{color:var(--cy);background:rgba(0,217,255,.08)}
+.nr{display:flex;gap:8px}.nr .btn{padding:7px 14px;font-size:13px}.hb{display:none;margin-left:auto;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;width:40px;height:36px;font-size:18px;cursor:pointer}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;border:1px solid var(--cy);background:var(--cy);color:#04111f;text-decoration:none;font:600 14px var(--sans);cursor:pointer;transition:box-shadow .25s,transform .15s}
+.btn:hover{box-shadow:0 0 24px rgba(0,217,255,.45)}.btn.o{background:none;color:var(--cy)}.btn.o:hover{background:rgba(0,217,255,.1)}
+.hero{padding:150px 0 90px}.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero h1{font:700 clamp(40px,6vw,74px)/1.04 var(--head);letter-spacing:-.03em;margin:16px 0 22px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--cy),var(--bl));-webkit-background-clip:text;background-clip:text;color:transparent}
+.d{max-width:540px;color:var(--mu)}.cta{display:flex;gap:10px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 22px;max-width:540px}
+.facts div{background:rgba(16,31,53,.6);backdrop-filter:blur(8px);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--mu)}.facts b{display:block;font:700 22px var(--head);color:var(--ice)}
+.soc{display:flex;gap:20px;font-size:14px}.soc a{color:var(--mu);text-decoration:none}.soc a:hover{color:var(--cy)}
+.pw{position:relative;padding:26px}.ring{position:absolute;inset:-4px;border:1px dashed rgba(165,243,252,.28);border-radius:50%;pointer-events:none}.r2{inset:40px -26px;border:1px solid rgba(59,130,246,.22)}
+.fl{position:absolute;background:rgba(16,31,53,.85);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:10px;padding:9px 13px;font:12px var(--mono);color:var(--ice)}.f1{left:-8px;bottom:64px}.f2{right:-8px;top:54px}
+.ph{position:relative;background:var(--card);border:1px solid var(--bd);overflow:hidden;border-radius:10px}.ph img{width:100%;height:100%;object-fit:cover}
+.ph .miss{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:12px;font:12px var(--mono);color:var(--mu);word-break:break-all}.ph.bad .miss{display:flex}.ph.bad img{display:none}
+.portrait{aspect-ratio:4/5;border-radius:18px;border-color:rgba(0,217,255,.4);box-shadow:0 0 70px rgba(0,217,255,.2)}
+.fx{display:flex;gap:6px;flex-wrap:wrap}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--bd);background:rgba(21,41,67,.75);border-radius:8px;padding:4px 10px;font-size:13px}
+.chip img,.tile img{background:#F1F5F9;border-radius:4px;padding:1px}.chip img{width:16px;height:16px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:56px}.pad{padding-top:6px}
+.tl{border-left:1px solid var(--bd);padding-left:28px;display:grid;gap:28px}.tl>div{position:relative}.tl>div:before{content:"";position:absolute;left:-34px;top:8px;width:11px;height:11px;background:var(--cy);border-radius:50%;box-shadow:0 0 12px var(--cy)}
+.tl h3{font-size:17px}.when{font:12.5px var(--mono);color:var(--cy)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:rgba(16,31,53,.7);border:1px solid var(--bd);border-radius:14px;padding:22px;backdrop-filter:blur(8px);transition:border-color .25s,box-shadow .25s}.card:hover{border-color:rgba(0,217,255,.45);box-shadow:0 0 30px rgba(0,217,255,.08)}
+.card.pj{padding:0;overflow:hidden;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%}.pj .ph{aspect-ratio:16/10;border:0;border-radius:0;border-bottom:1px solid var(--bd)}.pj .b{padding:18px}.pj p{font-size:14.5px;color:var(--mu);margin:6px 0 12px}
+#pgrid{grid-template-columns:repeat(3,1fr)}#pgrid>:nth-child(5n+1){grid-column:span 2}#pgrid>:nth-child(5n+1) .ph{aspect-ratio:21/9}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.tabs button{border:1px solid var(--bd);background:none;color:var(--mu);border-radius:8px;padding:7px 15px;cursor:pointer;font:500 13px var(--sans)}.tabs button[aria-pressed=true]{border-color:var(--cy);color:var(--cy);background:rgba(0,217,255,.08)}
+.sk{display:grid;grid-template-columns:230px 1fr;gap:34px}.skc{display:grid;gap:6px;align-content:start}
+.skc button{text-align:left;padding:11px 14px;border:1px solid var(--bd);border-radius:10px;background:rgba(16,31,53,.6);cursor:pointer;font:500 14px var(--sans);color:var(--mu)}.skc button[aria-pressed=true]{border-color:var(--cy);color:var(--cy)}
+.skp{display:flex;flex-wrap:wrap;gap:14px;align-content:flex-start}.tile{width:116px;border:1px solid var(--bd);border-radius:12px;background:rgba(16,31,53,.7);padding:16px 8px;text-align:center;font-size:13px}.tile img{width:38px;height:38px;margin:0 auto 8px}
+.tile i{display:grid;place-items:center;width:38px;height:38px;margin:0 auto 8px;background:var(--el);border-radius:8px;font:700 15px var(--head);color:var(--cy);font-style:normal}
+.feat{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(0,217,255,.3);background:rgba(16,31,53,.7);border-radius:16px;overflow:hidden;box-shadow:0 0 60px rgba(0,217,255,.07)}
+.feat .ph{min-height:340px;border:0;border-radius:0}.feat .tx{padding:34px}.feat dl{display:grid;grid-template-columns:90px 1fr;gap:6px 14px;font-size:14px;margin:16px 0}dt{font:12.5px var(--mono);color:var(--mu)}dd{margin:0}
+.big{font:700 clamp(70px,12vw,140px)/1 var(--head);background:linear-gradient(90deg,var(--cy),var(--bl));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;margin-bottom:34px}.stat p{color:var(--mu)}
+table{width:100%;border-collapse:collapse;font-size:14.5px;background:rgba(16,31,53,.6)}th,td{padding:12px 14px;border:1px solid var(--bd);text-align:left}th{background:var(--el);font-weight:500;color:var(--ice)}
+.g{columns:3 240px;column-gap:14px}.g button{display:block;width:100%;margin:0 0 14px;padding:0;border:1px solid var(--bd);border-radius:10px;overflow:hidden;background:none;cursor:zoom-in;break-inside:avoid}.g .ph{aspect-ratio:var(--r,4/3);border:0;border-radius:0}.g .cap{padding:7px 10px;font:12px var(--mono);color:var(--mu);text-align:left;background:var(--card)}
+#lb{position:fixed;inset:0;background:rgba(5,11,24,.95);display:none;z-index:60;align-items:center;justify-content:center;flex-direction:column;padding:20px}#lb.on{display:flex}#lb img{max-height:80vh;max-width:94vw;object-fit:contain}#lb p{color:var(--mu);margin-top:12px;font:13px var(--mono)}
+#lb button{position:absolute;background:none;border:1px solid var(--bd);color:#fff;font-size:24px;width:46px;height:46px;border-radius:10px;cursor:pointer}#lbx{top:16px;right:16px}#lbp{left:16px}#lbn{right:16px}
+dialog{border:1px solid rgba(0,217,255,.35);border-radius:16px;padding:0;max-width:760px;width:94vw;max-height:90vh;overflow:auto;background:var(--bg2);color:var(--tx)}dialog::backdrop{background:rgba(5,11,24,.8)}dialog .ph{aspect-ratio:16/8;border:0;border-radius:0}dialog .in{padding:28px}
+dialog h4{font:12.5px var(--mono);color:var(--cy);margin:18px 0 6px;font-weight:400}dialog ul{padding-left:20px}
+#contact{background:linear-gradient(180deg,transparent,#091426 35%,#0a2644)}form{display:grid;gap:14px}label{font:500 13px var(--sans);color:var(--ice);display:grid;gap:5px}
+input,textarea{padding:12px;border:1px solid var(--bd);border-radius:10px;background:rgba(5,11,24,.7);color:var(--tx);font:inherit}
+footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padding:34px 0;font-size:14px}footer a{color:var(--ice);text-decoration:none}footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.dis{opacity:.5;pointer-events:none}.rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:no-preference){.ring{animation:spin 50s linear infinite}.r2{animation-direction:reverse;animation-duration:70s}@keyframes spin{to{transform:rotate(360deg)}}body:before{animation:gr 30s linear infinite}@keyframes gr{to{background-position:0 56px,56px 0}}}
+@media(max-width:900px){.hg,.cols,.feat,.sk,.stat{grid-template-columns:1fr}.stat{gap:10px}.pw{max-width:420px}.skc{grid-template-columns:1fr 1fr}#pgrid{grid-template-columns:1fr}#pgrid>:nth-child(5n+1){grid-column:auto}.hb{display:block}.nr .btn:first-child{display:none}
+#menu{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:rgba(9,20,38,.97);border:1px solid var(--bd);border-radius:12px;padding:10px}#menu.open{display:flex}.nr{margin-left:0}}
+.art{position:absolute;inset:0;display:grid;place-items:center;padding:16px;text-align:center;font:600 20px/1.25 var(--head);color:rgba(165,243,252,.5);background:radial-gradient(circle at 25% 15%,rgba(0,217,255,.16),transparent 60%),var(--card)}
+</style></head><body><div id="glow"></div><div id="ld">NILOY<b>.</b></div>
+<nav><div class="w"><a class="logo" href="#home">NILOY<b>.</b></a><button class="hb" aria-label="Menu" aria-expanded="false">☰</button><div id="menu"></div><div class="nr"><a class="btn" href="cv/Niloy-CV.pdf" download>Download CV</a><a class="btn o" href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></div></div></nav>
+
+<header id="home" class="hero"><div class="w hg"><div>
+<p class="mono">Software Engineer | Full-Stack Developer | Digital Solutions Builder</p>
+<h1>Building <em>Intelligent</em> Solutions Through <em>Code.</em></h1>
+<p class="d">I'm MD. Shoadul Islam Niloy, a Computer Science and Engineering graduate from Daffodil International University, passionate about software engineering, artificial intelligence, and innovative technology.</p>
+<div class="cta" style="margin:28px 0"><a class="btn" href="#projects">Explore My Work</a><a class="btn o" href="cv/Niloy-CV.pdf" download>Download Resume</a></div>
+<div class="facts"><div><b><span data-n="100">100</span>+</b>Problems solved on beecrowd</div><div><b>IIT Bombay</b>Visiting student, Autumn 2024</div><div><b>IEEE Access</b>FlashViT, published research</div><div><b><span data-n="10">10</span></b>Software and research projects</div></div>
+<div class="soc"><a href="mailto:soadulniloy@gmail.com">Email</a><a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.soadulniloy.me" target="_blank" rel="noopener">Website</a></div></div>
+<div class="pw"><i class="ring"></i><i class="ring r2"></i><div class="ph portrait" data-img="portrait.jpg" data-alt="Portrait of MD. Shoadul Islam Niloy"></div><span class="fl f1">FlashViT · IEEE Access</span><span class="fl f2">IIT Bombay · Autumn 2024</span></div></div></header>
+
+<section id="about"><div class="w cols"><div><h2>About</h2>
+<p>I am a Computer Science and Engineering graduate from Daffodil International University, passionate about software development, problem-solving, artificial intelligence, and building practical digital solutions.</p><br>
+<p>My experience spans web development, mobile application development, machine learning, IoT, database-driven applications, and UI/UX design. I have also completed an international student exchange programme at IIT Bombay, India.</p><br>
+<p>Alongside my technical journey, I have developed leadership, communication, teamwork, and organizational skills through student organizations, competitive programming, and extracurricular activities. My goal is to create useful, scalable, and user-focused digital products while continuously growing as a software professional.</p>
+<h3 style="margin-top:26px">Interests</h3><div class="fx pad" id="interests"></div></div>
+<div class="ph" style="aspect-ratio:4/5" data-img="about-profile.jpg" data-alt="Niloy, profile photograph"></div></div></section>
+
+<section id="education"><div class="w"><h2>Education</h2><p class="lede">An academic path from Dhaka to Mumbai and back.</p>
+<div class="cols"><div class="tl">
+<div><span class="when">Graduated June 2026</span><h3>B.Sc. in Computer Science and Engineering</h3>Daffodil International University · CGPA 3.58 / 4.00</div>
+<div><span class="when">Autumn 2024</span><h3>Visiting / Exchange Student</h3>Indian Institute of Technology Bombay, India</div>
+<div><span class="when">2020</span><h3>HSC · GPA 5.00</h3>BCIC College, Dhaka · Board: Dhaka</div>
+<div><span class="when">2018</span><h3>SSC · GPA 5.00</h3>Shaheed Police Smrity College · Board: Dhaka</div></div>
+<div class="ph" style="aspect-ratio:4/3" data-img="diu-campus.jpg" data-alt="Daffodil International University campus"></div></div></div></section>
+
+<section id="iitb"><div class="w"><h2>IIT Bombay: Academic Journey</h2><p class="lede">Visiting / Exchange Student, Autumn 2024. Select a course to see its learning area.</p>
+<div class="cols"><div><div class="tabs" id="courses"></div><div class="card" id="cinfo" aria-live="polite">Select a course.</div>
+<p class="mono" style="margin-top:12px">Note: EE353 title/code to be checked against the official academic record.</p></div>
+<div class="ph" style="aspect-ratio:4/3" data-img="iit-bombay-campus.jpg" data-alt="IIT Bombay campus"></div></div></div></section>
+
+<section id="travel"><div class="w"><h2>IIT Bombay: Travel &amp; Exploration</h2><p class="lede">Separate from coursework: personal travel and exploration across Mumbai and Maharashtra.</p>
+<div class="cols"><div><h3>Places visited</h3><div class="fx pad" id="places"></div><h3 style="margin-top:24px">Experiences</h3><div class="fx pad" id="exps"></div></div>
+<div class="ph" style="aspect-ratio:16/10" data-img="WhatsApp Image 2026-11-15 at 16.21.46 (1).jpeg" data-alt="Travel photograph from India"></div></div></div></section>
+
+<section id="experience"><div class="w"><h2>Professional Experience</h2>
+<div class="tl" style="max-width:760px"><div><span class="when">2 months</span><h3>Software Testing Intern / QA Intern</h3>Reclaim Protocol Limited
+<ul style="margin:10px 0 0 18px"><li>Tested application features and functionalities.</li><li>Validated software fixes and expected behaviour.</li><li>Identified and reported software issues.</li><li>Prepared bug reports.</li><li>Supported software quality assurance activities.</li><li>Collaborated with distributed team members.</li></ul></div></div></div></section>
+
+<section id="growth"><div class="w"><h2>Technical Growth</h2><p class="lede">How the toolkit developed over time.</p>
+<div class="tl" id="growthTl"></div></div></section>
+
+<section id="skills"><div class="w"><h2>Technical Skills</h2><p class="lede">Grouped by specialization. Choose a category.</p>
+<div class="sk"><div class="skc" id="skc"></div><div><div class="skp" id="skp" aria-live="polite"></div></div></div>
+<h3 style="margin-top:34px">Additional skills</h3><div class="fx pad" id="addl"></div></div></section>
+
+<section id="projects"><div class="w"><h2>Featured Projects</h2><p class="lede">Ten approved projects. Select any card for the full details.</p>
+<div class="tabs" id="filters"></div><div class="grid3" id="pgrid"></div></div></section>
+
+<section id="research"><div class="w"><h2>Research &amp; Publications</h2><p class="lede">Computer vision, deep learning, Vision Transformers, and explainable AI.</p>
+<div class="feat"><div class="ph" data-img="Flashvit.jpg.png" data-alt="FlashViT research visualization"></div><div class="tx">
+<span class="when">Published in IEEE Access</span><h3 style="font-size:24px;margin:6px 0">FlashViT: A Memory-Efficient and Explainable Vision Transformer for Multi-Class Sweet Orange Disease Classification</h3>
+<p>A memory-efficient Vision Transformer for multi-class sweet orange disease classification, with explainability features that make model predictions more interpretable.</p>
+<dl><dt>Journal</dt><dd>IEEE Access</dd><dt>DOI</dt><dd>10.1109/ACCESS.2026.3738311</dd><dt>Stack</dt><dd>Python, PyTorch, Scikit-learn, NumPy, Pandas, Deep Learning, Vision Transformer</dd></dl>
+<a class="btn" href="https://doi.org/10.1109/ACCESS.2026.3738311" target="_blank" rel="noopener">Read the paper (DOI)</a></div></div>
+<div class="card" style="margin-top:22px"><h3>Neuro-Symbolic AI: Final Year Design Project</h3><p style="margin:6px 0">An academic project exploring the integration of neural learning and symbolic reasoning toward an explainable AI framework. Technologies: Python, PyTorch, Scikit-learn, NumPy, Pandas.</p></div></div></section>
+
+<section id="cp"><div class="w"><h2>Competitive Programming</h2>
+<div class="stat"><div class="big">100+</div><div><h3>Problems solved on URI Online Judge (beecrowd)</h3><p>Practical experience in algorithmic thinking, programming fundamentals, logical reasoning, and problem-solving.</p></div></div>
+<table><thead><tr><th>Contest</th><th>Preliminary round</th><th>Main round</th></tr></thead><tbody>
+<tr><td>DIU Takeoff Intra University Programming Contest 2022</td><td>Position 76</td><td>Position 117</td></tr>
+<tr><td>Unlock The Algorithm 2024 Programming Contest</td><td>Position 28</td><td>Position 96</td></tr></tbody></table></div></section>
+
+<section id="leadership"><div class="w"><h2>Leadership &amp; Achievements</h2><div class="cols"><div class="tl">
+<div><span class="when">2026–2027</span><h3>President, DIU Karate-Do Club</h3>Club leadership, organizational activities, student engagement, and coordination of club initiatives.</div>
+<div><span class="when">2025–2026</span><h3>Former Program Secretary, DIU Karate-Do Club</h3>Programme coordination, club activities, and organizational support.</div>
+<div><span class="when">Former</span><h3>Core Member, DIU Robotics Club</h3>Participated in student-led robotics club activities.</div></div>
+<div class="grid3" style="grid-template-columns:1fr"><div class="card"><span class="when">2025</span><h3>Bronze Medalist</h3>BKO Cup, 6th International Open Karate Championship 2025 · Male Kumite</div>
+<div class="card"><span class="when">2015</span><h3>3rd Place</h3>Prothom Alo Biggan Joyotsob 2015 · Science Olympiad, Junior Segment</div></div></div></div></section>
+
+<section id="business"><div class="w"><h2>Niloy's Digital Solutions</h2><p class="lede">A digital solutions initiative focused on helping businesses and organizations improve their digital presence, operations, and technological capabilities.</p>
+<div class="grid3" id="svc"></div></div></section>
+
+<section id="beyond"><div class="w"><h2>Beyond the Keyboard</h2><div class="grid3">
+<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="Bicycle.jpg" data-alt="Mountain biking"></div><h3>Mountain Biking</h3>Bicycle-based outdoor adventures.</div>
+<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="karate-competition.jpg" data-alt="Karate competition"></div><h3>Karate</h3>Martial arts, discipline, and physical development.</div>
+<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="WhatsApp Image 2026-11-15 at 16.21.46 (2).jpeg" data-alt="Travel and adventure"></div><h3>Travel &amp; Adventure</h3>New places, trekking, and outdoor experiences.</div></div></div></section>
+
+<section id="gallery"><div class="w"><h2>Photography Gallery</h2><p class="lede">Select a photograph to enlarge. Use arrow keys to browse.</p><div class="g" id="gal"></div></div></section>
+
+<section id="contact"><div class="w cols"><div><h2>Have an Interesting Idea? Let's Build Something Great.</h2><p>I am open to professional opportunities, software development collaborations, technology projects, and conversations about building useful digital products.</p><br><p><i>Have a project or an opportunity in mind? Let's connect and build something meaningful.</i></p><br>
+<p><b>Email</b><br><a href="mailto:soadulniloy@gmail.com">soadulniloy@gmail.com</a></p><br><p><b>LinkedIn</b><br><a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">linkedin.com/in/soadulniloy</a></p><br><p><b>Website</b><br><a href="https://www.soadulniloy.me" target="_blank" rel="noopener">soadulniloy.me</a></p></div>
+<form id="cf"><label>Your name<input name="name" required autocomplete="name"></label><label>Your email<input type="email" name="email" required autocomplete="email"></label><label>Message<textarea name="msg" rows="6" required></textarea></label>
+<button class="btn" type="submit">Send message</button><p class="mono" id="cstat" role="status"></p></form></div></section>
+
+<footer><div class="w"><div><b class="logo">NILOY<b>.</b></b><br>© 2026 MD. Shoadul Islam Niloy</div><div><a href="#about">About</a> · <a href="#projects">Projects</a> · <a href="#research">Research</a> · <a href="#contact">Contact</a> · <a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">LinkedIn</a></div><a href="#home">Back to top ↑</a></div></footer>
+
+<div id="lb" role="dialog" aria-label="Image viewer"><button id="lbx" aria-label="Close">×</button><button id="lbp" aria-label="Previous">‹</button><img alt=""><p></p><button id="lbn" aria-label="Next">›</button></div>
+<dialog id="pd"></dialog>
+
+<script>
+const BASE="images/"; // folder holding your photos. Use "" if photos sit beside index.html
+const $=s=>document.querySelector(s),el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!==undefined)e.innerHTML=h;return e};
+const dev={C:'c',Java:'java',PHP:'php',Python:'python',Dart:'dart',HTML:'html5',CSS:'css3',React:'react',TypeScript:'typescript',Vite:'vitejs','Node.js':'nodejs','Express.js':'express',MySQL:'mysql','MongoDB Atlas':'mongodb',MongoDB:'mongodb','Firebase Authentication':'firebase',Flutter:'flutter',PyTorch:'pytorch','Scikit-learn':'scikitlearn',NumPy:'numpy',Pandas:'pandas',Arduino:'arduino','Adobe XD':'xd'};
+const logo=n=>dev[n]?`<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${dev[n]}/${dev[n]}-original.svg" alt="" loading="lazy" onerror="this.remove()">`:'';
+const chips=a=>a.map(x=>`<span class="chip">${logo(x)}${x}</span>`).join('');
+// images with graceful placeholder
+function img(ph){const f=ph.dataset.img;ph.setAttribute('role','img');ph.setAttribute('aria-label',ph.dataset.alt);
+ ph.innerHTML=`<img src="${BASE+encodeURI(f)}" alt="${ph.dataset.alt}" loading="lazy"><span class="miss">Image needed:<br>${f}</span>`;
+ ph.firstChild.onerror=()=>ph.classList.add('bad')}
+const imgs=()=>document.querySelectorAll('.ph[data-img]:not(:has(img)):not(.bad)').forEach(img);
+// nav
+const secs=[['about','About'],['education','Education'],['iitb','IIT Bombay'],['travel','Travel'],['experience','Experience'],['growth','Growth'],['skills','Skills'],['projects','Projects'],['research','Research'],['cp','Programming'],['leadership','Leadership'],['business','Digital Solutions'],['beyond','Beyond'],['gallery','Gallery'],['contact','Contact']];
+$('#menu').innerHTML=secs.map(s=>`<a href="#${s[0]}">${s[1]}</a>`).join('');
+$('#interests').innerHTML=chips(['Software Engineering','Full-Stack Development','Web Applications','Mobile Applications','AI & Machine Learning','Research & Innovation','Digital Solutions']);
+// IIT courses
+const courses=[['CS317','Database and Information Systems (DBIS)','Database and Information Systems'],['CS348','Networks','Computer Networks'],['CS626','NLP and Web','Natural Language Processing; Web Technologies'],['CS378','Networks Lab','Computer Networks (lab)'],['EE353','Introduction to Data Science and Machine Learning','Data Science; Machine Learning']];
+courses.forEach((c,i)=>{const b=el('button','',c[0]);b.setAttribute('aria-pressed',i==0);b.onclick=()=>{document.querySelectorAll('#courses button').forEach(x=>x.setAttribute('aria-pressed',x==b));$('#cinfo').innerHTML=`<h3>${c[0]}: ${c[1]}</h3><p style="margin-top:6px">Learning area: ${c[2]}</p>`};$('#courses').append(b);if(!i)b.click()});
+$('#places').innerHTML=chips(['Gateway of India, Mumbai','Atal Setu','Elephanta Caves','Juhu Beach','Versova Beach','Ratangad Trek']);
+$('#exps').innerHTML=chips(['Midnight Cycling','Mumbai Local Train Journey','Exploring Mumbai','Trekking and outdoor adventures']);
+// growth
+const growth=[['Programming foundations',['C','Java','PHP']],['Web development',['HTML','CSS','PHP']],['Database-driven applications',['MySQL','MongoDB']],['Mobile application development',['Flutter','Dart']],['AI and machine learning',['Python','PyTorch','Scikit-learn','NumPy','Pandas']],['IoT development',['Arduino','Soil Moisture Sensors']],['UI/UX design',['Adobe XD']],['Currently learning',['Full-Stack Web Development (MERN)','Laravel MVC']]];
+$('#growthTl').innerHTML=growth.map(g=>`<div><h3>${g[0]}</h3><div class="fx pad">${chips(g[1])}</div></div>`).join('');
+// skills
+const sk={'Programming':['C','Java','PHP','Python','Dart'],'Frontend & Web':['HTML','CSS','React','TypeScript','Vite'],'Backend & Database':['Node.js','Express.js','PHP','MySQL','MongoDB Atlas','Firebase Authentication'],'Mobile':['Flutter','Dart'],'AI / ML':['PyTorch','Scikit-learn','NumPy','Pandas','Machine Learning','Deep Learning','Vision Transformers','Explainable AI'],'IoT & Hardware':['Arduino','Soil Moisture Sensors'],'UI/UX Design':['Adobe XD','UI/UX Design']};
+Object.keys(sk).forEach((k,i)=>{const b=el('button','',k);b.onclick=()=>{document.querySelectorAll('#skc button').forEach(x=>x.setAttribute('aria-pressed',x==b));$('#skp').innerHTML=sk[k].map(n=>`<div class="tile">${dev[n]?logo(n):`<i>${n[0]}</i>`}${n}</div>`).join('')};$('#skc').append(b);if(!i)b.click()});
+$('#addl').innerHTML=chips(['Programming Problem Solving','Software Testing','Troubleshooting','Presentation','Hosting','Computer Hardware and Software Knowledge','Teaching and Private Tuition','Communication','Public Relations','Multilingual Communication','Team Collaboration']);
+// projects
+const P=[
+{t:'FlashViT',c:'AI & Research',cat:'Artificial Intelligence / Deep Learning / Research',img:'Flashvit.jpg.png',ov:'A research project developing a memory-efficient Vision Transformer for multi-class sweet orange disease classification, with explainability features that make predictions more interpretable. Published in IEEE Access (DOI 10.1109/ACCESS.2026.3738311).',f:['Vision Transformer-based disease classification','Memory-efficient model design','Explainable AI','Multi-class sweet orange disease classification','Deep learning research'],s:['Python','PyTorch','Scikit-learn','NumPy','Pandas','Deep Learning','Vision Transformer'],doi:1},
+{t:'GhotokderBari',c:'Web',cat:'Matrimonial Platform / Startup Project',ov:'A bilingual Bengali and English matrimonial platform designed to connect people seeking meaningful marriage relationships, targeting users in Bangladesh and the Bangladeshi diaspora.',f:['Bengali and English interface','Matrimonial profile platform','Matchmaking and connection features','Paid matchmaking packages'],s:['React','TypeScript','Vite','Node.js','Express.js','MongoDB Atlas','Firebase Authentication','ImgBB'],note:'Business planning targets (not verified revenue): initial planned investment ৳10,000; target market Bangladesh + Diaspora; planned team of 4–5; monthly income target ৳100,000.'},
+{t:"NILOY'S Game Shop",c:'Web',cat:'E-commerce / Database-Driven Web Application',ov:'A web-based game shop developed to present and manage gaming-related products through a website.',f:[],s:['PHP','HTML','CSS','MySQL']},
+{t:'Tourist Management System',c:'Web',cat:'Web Application',ov:'A web-based tourist management project designed to organize tourism-related information and provide a structured interface for users.',f:[],s:['PHP','HTML','CSS']},
+{t:'To-Do List Application',c:'Mobile',cat:'Cross-Platform Mobile Application',ov:'A cross-platform task management application developed using Flutter and a PHP backend, supporting CRUD operations and backend integration.',f:['Task creation','Task viewing','Task updating','Task deletion','Backend integration'],s:['Flutter','Dart','PHP','MySQL']},
+{t:'Parking Management System',c:'Systems & IoT',cat:'C Programming Project',ov:'A C-based project focused on automation logic for parking management and optimization.',f:['Parking management logic','Automated operations','Parking optimization'],s:['C']},
+{t:'Smart Irrigation System',c:'Systems & IoT',cat:'IoT / Embedded System',ov:'An Arduino-based project designed to automate irrigation control using soil moisture sensing.',f:['Soil moisture sensing','Automated irrigation control','Sensor-based decision-making'],s:['Arduino','Soil Moisture Sensor']},
+{t:'Bank Management System',c:'Systems & IoT',cat:'Object-Oriented Programming',ov:'A Java-based bank management application demonstrating object-oriented programming through account management and transaction operations.',f:['Account management','Transaction operations','Object-oriented application structure'],s:['Java','Object-Oriented Programming (OOP)']},
+{t:'Brainberry: All-in-One App',c:'Design',cat:'UI/UX Design',ov:'A multi-purpose application interface designed with a focus on usability and user experience.',f:['User-focused interface','Multi-purpose application concept','UI/UX design'],s:['Adobe XD','UI/UX Design']},
+{t:'Neuro-Symbolic AI: FYDP',c:'AI & Research',cat:'Final Year Design Project / Academic Research',ov:'An academic project exploring the combination of neural-network-based learning and symbolic reasoning to develop an explainable AI framework.',f:['Neural network-based learning','Symbolic reasoning','Explainable AI concepts','Integration of learning-based and rule-based approaches'],s:['Python','PyTorch','Scikit-learn','NumPy','Pandas']}];
+const cats=['All','AI & Research','Web','Mobile','Systems & IoT','Design'];let cur='All';
+function draw(){$('#pgrid').innerHTML='';P.forEach((p,i)=>{if(cur!='All'&&p.c!=cur)return;const b=el('button','card pj');
+ b.innerHTML=`<div class="ph" ${p.img?`data-img="${p.img}" data-alt="${p.t}"`:''}>${p.img?'':`<span class="art">${p.t}</span>`}</div><div class="b"><span class="mono">${p.cat}</span><h3>${p.t}</h3><p>${p.ov.slice(0,110)}…</p><div class="fx">${p.s.slice(0,4).map(x=>`<span class="chip">${x}</span>`).join('')}</div></div>`;
+ b.onclick=()=>open(i);$('#pgrid').append(b)});imgs()}
+cats.forEach(c=>{const b=el('button','',c);b.setAttribute('aria-pressed',c==cur);b.onclick=()=>{cur=c;document.querySelectorAll('#filters button').forEach(x=>x.setAttribute('aria-pressed',x==b));draw()};$('#filters').append(b)});
+function open(i){const p=P[i],d=$('#pd');d.innerHTML=`${p.img?`<div class="ph" data-img="${p.img}" data-alt="${p.t}"></div>`:''}<div class="in"><span class="mono">${p.cat}</span><h3 style="font-size:28px">${p.t}</h3><p style="margin-top:8px">${p.ov}</p>
+${p.f.length?`<h4>Key features / focus</h4><ul>${p.f.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}<h4>Technology stack</h4><div class="fx">${chips(p.s)}</div>${p.note?`<h4>Note</h4><p>${p.note}</p>`:''}
+<h4>Links</h4><div class="cta">${p.doi?'<a class="btn" href="https://doi.org/10.1109/ACCESS.2026.3738311" target="_blank" rel="noopener">Publication (DOI)</a>':''}<span class="btn o dis">GitHub link not yet supplied</span><span class="btn o dis">Live demo not yet supplied</span></div>
+<div class="cta" style="margin-top:20px"><button class="btn o" onclick="$('#pd').close()">Close</button></div></div>`;d.showModal();imgs()}
+$('#pd').addEventListener('click',e=>{if(e.target==$('#pd'))$('#pd').close()});
+// services
+$('#svc').innerHTML=['Custom Software Solutions','Digital Transformation for Businesses','Business Website Development','IoT Projects','Digital Solutions'].map(s=>`<div class="card"><h3>${s}</h3></div>`).join('');
+// gallery
+const G=[['karate-competition.jpg','Karate competition'],['karate-competition (1).jpeg','Karate competition'],['karate-competition (2).jpeg','Karate competition'],['karate-competition (3).jpeg','Karate competition'],['karate-competition (4).jpeg','Karate competition'],['karate-competition (5).jpeg','Karate competition'],['karate-competition (6).jpeg','Karate competition'],['Bicycle.jpg','Mountain biking'],['Bicycle.jpeg','Mountain biking'],['iit-bombay-campus.jpg','IIT Bombay campus'],['diu-campus.jpg','DIU campus'],['diu-niloy-campus-01.jpg','At DIU campus'],['diu-niloy-university-life.jpg','University life at DIU'],['WhatsApp Image 2026-11-15 at 16.21.46 (1).jpeg','Travel photograph'],['WhatsApp Image 2026-11-15 at 16.21.46 (2).jpeg','Travel photograph'],['WhatsApp Image 2026-11-15 at 16.21.47 (1).jpeg','Travel photograph'],['WhatsApp Image 2026-11-15 at 16.21.47 (2).jpeg','Travel photograph']];
+const ratios=['4/3','3/4','1/1','4/5','3/2'];
+G.forEach((g,i)=>{const b=el('button');b.setAttribute('aria-label','Enlarge: '+g[1]);b.style.setProperty('--r',ratios[i%5]);b.innerHTML=`<div class="ph" data-img="${g[0]}" data-alt="${g[1]}"></div><div class="cap">${g[1]}</div>`;b.onclick=()=>lb(i);$('#gal').append(b)});
+let li=0;const L=$('#lb');function lb(i){li=(i+G.length)%G.length;L.querySelector('img').src=BASE+encodeURI(G[li][0]);L.querySelector('img').alt=G[li][1];L.querySelector('p').textContent=G[li][1]+'  ('+(li+1)+'/'+G.length+')';L.classList.add('on')}
+$('#lbx').onclick=()=>L.classList.remove('on');$('#lbp').onclick=()=>lb(li-1);$('#lbn').onclick=()=>lb(li+1);L.onclick=e=>{if(e.target==L)L.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(!L.classList.contains('on'))return;if(e.key=='Escape')L.classList.remove('on');if(e.key=='ArrowLeft')lb(li-1);if(e.key=='ArrowRight')lb(li+1)});
+// contact: opens the visitor's mail app. To send server-side, POST the same fields to a backend (e.g. Formspree/Netlify Forms/own Express route) in place of the mailto below.
+$('#cf').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);location.href=`mailto:soadulniloy@gmail.com?subject=${encodeURIComponent('Portfolio message from '+f.get('name'))}&body=${encodeURIComponent(f.get('msg')+'\n\nReply to: '+f.get('email'))}`;$('#cstat').textContent='Your email app should open with the message ready to send.'};
+draw();imgs();
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const hb=$('.hb');hb.onclick=()=>{const o=$('#menu').classList.toggle('open');hb.setAttribute('aria-expanded',o)};$('#menu').onclick=()=>$('#menu').classList.remove('open');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.06});
+if(!rm)document.querySelectorAll('section .w').forEach(e=>{e.classList.add('rv');io.observe(e)});
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('#menu a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('section[id]').forEach(x=>so.observe(x));
+if(!rm)document.querySelectorAll('[data-n]').forEach(x=>{const n=+x.dataset.n;let t0;const f=t=>{t0=t0||t;const p=Math.min((t-t0)/1300,1);x.textContent=Math.round(n*p);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)});
+if(matchMedia('(pointer:fine)').matches&&!rm){addEventListener('pointermove',e=>{$('#glow').style.transform=`translate(${e.clientX}px,${e.clientY}px)`});
+document.querySelectorAll('.btn').forEach(b=>{b.onpointermove=e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.12}px,${(e.clientY-r.top-r.height/2)*.2}px)`};b.onpointerleave=()=>b.style.transform=''})}
+</script></body></html>
