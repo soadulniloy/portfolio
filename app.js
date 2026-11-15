@@ -12,19 +12,19 @@ let out=`<section class="hero" id="home"><div><p class="role mono">&gt; ${esc(S.
 out+=sec("about","About",`<div class="about">${S.about.map(p=>`<p>${esc(p)}</p>`).join("")}</div>`);
 out+=sec("education","Education",`<div class="tl">${S.education.map(e=>`<div class="it card"><div class="box"><div><span class="when mono">${esc(e.when)}</span><h3>${esc(e.title)}</h3><div class="org">${esc(e.org)}</div><p>${esc(e.note||"")}</p>
 ${e.courses?`<table>${e.courses.map(c=>`<tr><td>${c[0]}</td><td>${esc(c[1])}</td></tr>`).join("")}</table>`:""}${e.link?`<p><a href="${L[e.link[1]]}" target="_blank" rel="noopener">${e.link[0]}</a></p>`:""}</div>${img(e.image,e.org)}</div></div>`).join("")}</div>`);
-out+=sec("experience","Experience",S.experience.map(e=>`<div class="card" style="padding:22px"><span class="when mono">${esc(e.when)}</span><h3>${esc(e.role)}</h3><div class="org">${esc(e.org)}</div><ul style="margin:12px 0 12px 20px;color:#c4d8ec">${e.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>${chips(e.skills)}</div>`).join(""));
+out+=sec("experience","Experience",S.experience.map(e=>`<div class="card" style="padding:22px"><span class="when mono">${esc(e.when)}</span><h3>${esc(e.role)}</h3><div class="org">${esc(e.org)}</div><ul style="margin:12px 0 12px 20px;color:var(--txt)">${e.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>${chips(e.skills)}</div>`).join(""));
 out+=sec("skills","Skills",`<div class="skills">${Object.entries(S.skills).map(([k,v])=>`<div class="card"><h3 class="mono">${esc(k)}</h3>${chips(v)}</div>`).join("")}</div>`);
 const cats=["All",...new Set(S.projects.map(p=>p.cat))];
 out+=sec("projects","Projects",`<div class="filters" id="flt">${cats.map((c,i)=>`<button class="${i?"":"on"}">${esc(c)}</button>`).join("")}</div><div class="grid" id="pg"></div>`);
 out+=sec("research","Research",S.research.map(r=>`<div class="card rs"><span class="when mono">${esc(r.venue)}</span><h3>${esc(r.title)}</h3><div class="org">${esc(r.domain)}</div>${r.doi?`<p style="margin-top:10px"><a href="${r.doi}" target="_blank" rel="noopener">DOI: ${r.doi.replace("https://doi.org/","")}</a></p>`:""}${r.abstract?`<details><summary>Read abstract</summary><p>${esc(r.abstract)}</p></details>`:""}</div>`).join(""));
 out+=sec("achievements","Achievements",`<div class="two">${S.achievements.map(a=>`<div class="card">${img(a.image,a.t,"")}<div style="padding:18px"><h3>${esc(a.t)}</h3><p>${esc(a.d)}</p></div></div>`).join("")}</div>`);
 out+=sec("leadership","Leadership",`<div class="two">${S.leadership.map(a=>`<div class="card"><h3>${esc(a.role)}</h3><p>${esc(a.org)} ${esc(a.when)}</p></div>`).join("")}</div>`);
-out+=sec("business","Niloy's Digital Solutions",`<div class="card" style="padding:22px"><p style="margin-bottom:12px;color:#c4d8ec">Digital solutions and technology services.</p>${chips(S.business.services)}</div>`);
-out+=sec("karate","Karate",`<p style="margin-bottom:16px;color:#c4d8ec;max-width:46em">Competition, international championship experience and leadership as President of the DIU Karate-Do Club.</p><div class="gal" id="kg"></div>`);
+out+=sec("business","Niloy's Digital Solutions",`<div class="card" style="padding:22px"><p style="margin-bottom:12px;color:var(--txt)">Digital solutions and technology services.</p>${chips(S.business.services)}</div>`);
+out+=sec("karate","Karate",`<p style="margin-bottom:16px;color:var(--txt);max-width:46em">Competition, international championship experience and leadership as President of the DIU Karate-Do Club.</p><div class="gal" id="kg"></div>`);
 out+=sec("beyond","Beyond the Keyboard",`<div class="two">${S.beyond.map(b=>`<div class="card"><h3>${esc(b[0])}</h3><p>${esc(b[1])}</p></div>`).join("")}</div>`);
-out+=(S.extraSections||[]).map(x=>sec(x.id,x.title,(x.intro?`<p style="margin-bottom:16px;color:#c4d8ec;max-width:46em">${esc(x.intro)}</p>`:"")+`<div class="two">${(x.cards||[]).map(c=>`<div class="card">${img(c.image,c.t)}<div style="padding:18px"><h3>${esc(c.t)}</h3><p>${esc(c.d||"")}</p>${c.link?`<p><a href="${c.link[1]}" target="_blank" rel="noopener">${esc(c.link[0])}</a></p>`:""}</div></div>`).join("")}</div>`)).join("");
+out+=(S.extraSections||[]).map(x=>sec(x.id,x.title,(x.intro?`<p style="margin-bottom:16px;color:var(--txt);max-width:46em">${esc(x.intro)}</p>`:"")+`<div class="two">${(x.cards||[]).map(c=>`<div class="card">${img(c.image,c.t)}<div style="padding:18px"><h3>${esc(c.t)}</h3><p>${esc(c.d||"")}</p>${c.link?`<p><a href="${c.link[1]}" target="_blank" rel="noopener">${esc(c.link[0])}</a></p>`:""}</div></div>`).join("")}</div>`)).join("");
 out+=sec("gallery","Gallery",`<div class="filters" id="gf"></div><div class="gal" id="gal"></div>`);
-out+=sec("contact","Contact",`<p style="margin-bottom:16px;color:#c4d8ec">Email <a href="mailto:${S.email}">${S.email}</a>${L.linkedin?` · <a href="${L.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`:""}${L.github?` · <a href="${L.github}" target="_blank" rel="noopener">GitHub</a>`:""}</p>
+out+=sec("contact","Contact",`<p style="margin-bottom:16px;color:var(--txt)">Email <a href="mailto:${S.email}">${S.email}</a>${L.linkedin?` · <a href="${L.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`:""}${L.github?` · <a href="${L.github}" target="_blank" rel="noopener">GitHub</a>`:""}</p>
 <form class="cf" id="cf"><input name="n" placeholder="Your name" required><input name="e" type="email" placeholder="Your email" required><textarea name="m" rows="5" placeholder="Message" required></textarea><button class="btn p">Send message</button></form>`);
 $("#app").innerHTML=out+`<footer class="mono">© ${new Date().getFullYear()} ${esc(S.name)}</footer>`;
 // nav
@@ -62,3 +62,17 @@ addEventListener("keydown",e=>{if(!ov.hidden&&e.key==="Escape")closeP();if(!lb.h
 $("#cf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);location.href=`mailto:${S.email}?subject=${encodeURIComponent("Portfolio message from "+f.get("n"))}&body=${encodeURIComponent(f.get("m")+"\n\n"+f.get("e"))}`};
 // empty section hide
 document.querySelectorAll("section").forEach(s=>{if((s.id==="gallery"&&!S.gallery.length)||(s.id==="karate"&&!kar.length))s.hidden=true});
+
+// ===== UI extras: progress bar, cursor glow, typing, theme toggle, HUD frame =====
+document.body.insertAdjacentHTML("afterbegin",'<div id="prog"></div><div id="glow"></div>');
+addEventListener("scroll",()=>{const h=document.documentElement;$("#prog").style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});
+if(matchMedia("(pointer:fine)").matches)addEventListener("pointermove",e=>{const g=$("#glow");g.style.left=e.clientX+"px";g.style.top=e.clientY+"px"},{passive:true});
+const ph=$(".ph");if(ph)ph.insertAdjacentHTML("beforeend",'<i class="tick t1"></i><i class="tick t2"></i><i class="tick t3"></i><i class="tick t4"></i>');
+const roles=["Software Engineer","Full-Stack Developer","Digital Solutions Builder"],ro=$(".hero .role");
+if(ro){ro.innerHTML='&gt; <span id="ty"></span><i class="caret"></i>';const ty=$("#ty");
+ if(matchMedia("(prefers-reduced-motion:reduce)").matches)ty.textContent=S.title;
+ else{let r=0,c=0,d=1;const tick=()=>{const w=roles[r];c+=d;ty.textContent=w.slice(0,c);let t=d>0?70:35;if(d>0&&c===w.length){d=-1;t=1400}else if(d<0&&c===0){d=1;r=(r+1)%roles.length;t=300}setTimeout(tick,t)};tick()}}
+const root=document.documentElement;let theme="dark";try{theme=localStorage.getItem("theme")||"dark"}catch(e){}
+const setT=t=>{root.dataset.theme=t;$("#tg").textContent=t==="dark"?"☀":"☾";$("#tg").setAttribute("aria-label",t==="dark"?"Switch to light sky theme":"Switch to dark theme")};
+$("#burger").insertAdjacentHTML("beforebegin",'<button id="tg"></button>');setT(theme);
+$("#tg").onclick=()=>{theme=theme==="dark"?"light":"dark";try{localStorage.setItem("theme",theme)}catch(e){}setT(theme)};
