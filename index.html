@@ -127,14 +127,14 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padd
 <div class="grid3" id="pgrid">
 
 <article class="card pj" data-c="AI &amp; Research" data-i="0" tabindex="0" aria-label="FlashViT — details">
-<div class="ph"><span class="art">FlashViT<small>AI &amp; RESEARCH</small></span></div>
+<div class="ph" data-img="proj-flashvit.jpg" data-alt="FlashViT paper on IEEE Xplore"></div>
 <div class="b"><span class="mono">Artificial Intelligence / Deep Learning / Research</span><h3>FlashViT</h3>
 <p>A research project developing a memory-efficient Vision Transformer for multi-class sweet orange disease classification, with explainability features that make predictions more interpretable. Published in IEEE Access.</p>
 <div class="fx"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">Scikit-learn</span><span class="chip">Vision Transformer</span></div>
 <p style="margin-top:12px"><a href="https://doi.org/10.1109/ACCESS.2026.3738311" target="_blank" rel="noopener">Publication (DOI) &#8599;</a></p></div></article>
 
 <article class="card pj" data-c="Web" data-i="1" tabindex="0" aria-label="Assignment Management — details">
-<div class="ph"><span class="art">Assignment<br>Management<small>WEB &middot; FULL-STACK</small></span></div>
+<div class="ph" data-img="proj-assignment.jpg" data-alt="Assignment Manager login page"></div>
 <div class="b"><span class="mono">Full-Stack Web Application / ASP.NET Core + Next.js</span><h3>Assignment Management</h3>
 <p>A full-stack Assignment &amp; Submission Management System: admins manage users, courses and enrollments; teachers create and grade assignments; students submit coursework — with strict role-based authorization.</p>
 <div class="fx"><span class="chip">ASP.NET Core</span><span class="chip">Next.js</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span></div>
@@ -166,7 +166,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padd
 <div class="fx"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">PHP</span><span class="chip">MySQL</span></div></div></article>
 
 <article class="card pj" data-c="Systems &amp; IoT" data-i="6" tabindex="0" aria-label="Ultrasonic Motor Speed Control — details">
-<div class="ph"><span class="art">Ultrasonic<br>Motor Control<small>SYSTEMS &amp; IOT</small></span></div>
+<div class="ph" data-img="proj-ultra-circuit.png" data-alt="Ultrasonic motor speed control circuit diagram"></div>
 <div class="b"><span class="mono">IoT / Embedded System / Arduino</span><h3>Ultrasonic Motor Speed Control</h3>
 <p>Arduino UNO + HC-SR04 ultrasonic sensor based DC motor speed control &mdash; full speed when clear, slows near obstacles, stops when too close.</p>
 <div class="fx"><span class="chip">Arduino</span><span class="chip">HC-SR04</span><span class="chip">C/C++</span><span class="chip">PWM</span></div>
@@ -179,7 +179,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padd
 <div class="fx"><span class="chip">C</span></div></div></article>
 
 <article class="card pj" data-c="Systems &amp; IoT" data-i="8" tabindex="0" aria-label="Smart Irrigation System — details">
-<div class="ph"><span class="art">Smart<br>Irrigation<small>IOT &middot; EMBEDDED</small></span></div>
+<div class="ph" data-img="proj-smart-circuit.png" data-alt="Smart irrigation circuit diagram"></div>
 <div class="b"><span class="mono">IoT / Embedded System</span><h3>Smart Irrigation System</h3>
 <p>An Arduino-based Smart Garden irrigation system built for the DIU Digital Electronics Lab (CSE 224): a soil-moisture sensor on pin A5 drives the pump and indicators on A0/A1/A2 to automate watering. Designed in Tinkercad.</p>
 <div class="fx"><span class="chip">Arduino</span><span class="chip">Soil Moisture Sensor</span><span class="chip">Tinkercad</span></div>
@@ -192,7 +192,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padd
 <div class="fx"><span class="chip">Java</span><span class="chip">OOP</span></div></div></article>
 
 <article class="card pj" data-c="Design" data-i="10" tabindex="0" aria-label="Brainberry — details">
-<div class="ph"><span class="art">Brainberry<small>UI/UX DESIGN</small></span></div>
+<div class="ph" data-img="proj-brainberry.jpg" data-alt="Brainberry app overview video"></div>
 <div class="b"><span class="mono">UI/UX Design</span><h3>Brainberry: All-in-One App</h3>
 <p>A multi-purpose application interface designed with a focus on usability and user experience.</p>
 <div class="fx"><span class="chip">Adobe XD</span><span class="chip">UI/UX Design</span></div>
@@ -316,27 +316,27 @@ $('#places').innerHTML=chips(['Gateway of India, Mumbai','Atal Setu','Elephanta 
 $('#exps').innerHTML=chips(['Midnight Cycling','Mumbai Local Train Journey','Exploring Mumbai','Trekking and outdoor adventures']);
 // projects: detail data (cards are static HTML; modal morphs from the clicked card)
 const P=[
-{t:'FlashViT',cat:'Artificial Intelligence / Deep Learning / Research',ov:'A research project developing a memory-efficient Vision Transformer for multi-class sweet orange disease classification, with explainability features that make predictions more interpretable. Published in IEEE Access (DOI 10.1109/ACCESS.2026.3738311).',f:['Vision Transformer-based disease classification','Memory-efficient model design','Explainable AI','Multi-class sweet orange disease classification','Deep learning research'],s:['Python','PyTorch','Scikit-learn','NumPy','Pandas','Deep Learning','Vision Transformer'],links:[['Publication (DOI)','https://doi.org/10.1109/ACCESS.2026.3738311']]},
-{t:'Assignment Management',cat:'Full-Stack Web Application / ASP.NET Core + Next.js',ov:'A full-stack Assignment & Submission Management System: admins manage users, courses and enrollments; teachers create and grade assignments; students submit coursework — with strict role-based authorization. Live on Vercel in demo mode.',f:['Role-based authorization (Admin / Teacher / Student)','JWT authentication','Courses, enrollments and assignment workflows','Submission and grading','Swagger API documentation','xUnit tests','Dockerized PostgreSQL'],s:['ASP.NET Core','.NET 10','Next.js','React','TypeScript','PostgreSQL','EF Core','Docker','JWT','Tailwind CSS'],links:[['GitHub','https://github.com/soadulniloy/assignment-management'],['Live demo','https://assignment-management-black.vercel.app']]},
+{t:'FlashViT',img:'proj-flashvit.jpg',cat:'Artificial Intelligence / Deep Learning / Research',ov:'A research project developing a memory-efficient Vision Transformer for multi-class sweet orange disease classification, with explainability features that make predictions more interpretable. Published in IEEE Access (DOI 10.1109/ACCESS.2026.3738311).',f:['Vision Transformer-based disease classification','Memory-efficient model design','Explainable AI','Multi-class sweet orange disease classification','Deep learning research'],s:['Python','PyTorch','Scikit-learn','NumPy','Pandas','Deep Learning','Vision Transformer'],links:[['Publication (DOI)','https://doi.org/10.1109/ACCESS.2026.3738311']]},
+{t:'Assignment Management',img:'proj-assignment.jpg',cat:'Full-Stack Web Application / ASP.NET Core + Next.js',ov:'A full-stack Assignment & Submission Management System: admins manage users, courses and enrollments; teachers create and grade assignments; students submit coursework — with strict role-based authorization. Live on Vercel in demo mode.',f:['Role-based authorization (Admin / Teacher / Student)','JWT authentication','Courses, enrollments and assignment workflows','Submission and grading','Swagger API documentation','xUnit tests','Dockerized PostgreSQL'],s:['ASP.NET Core','.NET 10','Next.js','React','TypeScript','PostgreSQL','EF Core','Docker','JWT','Tailwind CSS'],links:[['GitHub','https://github.com/soadulniloy/assignment-management'],['Live demo','https://assignment-management-black.vercel.app']]},
 {t:'GhotokderBari',cat:'Matrimonial Platform / Startup Project',ov:'A bilingual Bengali and English matrimonial platform designed to connect people seeking meaningful marriage relationships, targeting users in Bangladesh and the Bangladeshi diaspora.',f:['Bengali and English interface','Matrimonial profile platform','Matchmaking and connection features','Paid matchmaking packages'],s:['React','TypeScript','Vite','Node.js','Express.js','MongoDB Atlas','Firebase Authentication','ImgBB'],note:'Business planning targets (not verified revenue): initial planned investment ৳10,000; target market Bangladesh + Diaspora; planned team of 4–5; monthly income target ৳100,000.',links:[]},
 {t:"NILOY'S Game Shop",cat:'E-commerce / Database-Driven Web Application',ov:'A web-based game shop developed to present and manage gaming-related products through a website.',f:[],s:['PHP','HTML','CSS','MySQL'],links:[['GitHub','https://github.com/soadulniloy/Niloys_game_shop']]},
 {t:'Tourist Management System',cat:'Web Application',ov:'A web-based tourist management project designed to organize tourism-related information and provide a structured interface for users.',f:[],s:['PHP','HTML','CSS'],links:[]},
 {t:'To-Do List Application',cat:'Cross-Platform Mobile Application',ov:'A cross-platform task management application developed using Flutter and a PHP backend, supporting CRUD operations and backend integration.',f:['Task creation','Task viewing','Task updating','Task deletion','Backend integration'],s:['Flutter','Dart','PHP','MySQL'],links:[]},
-{t:'Ultrasonic Motor Speed Control',cat:'IoT / Embedded System / Arduino',ov:'Arduino UNO + HC-SR04 ultrasonic sensor based DC motor speed control — full speed when clear, slows near obstacles, stops when too close. Distance zones: ≥50 cm full speed, 20–50 cm slow, 5–20 cm crawl, ≤5 cm stop.',f:['Distance-based speed zones (full / slow / crawl / stop)','HC-SR04 trig D7, echo D8','Motor PWM on D9','Real-time obstacle response'],s:['Arduino','HC-SR04','C/C++','PWM'],links:[['GitHub','https://github.com/soadulniloy/ultrasonic-motor-speed-control']]},
+{t:'Ultrasonic Motor Speed Control',img:'proj-ultra-circuit.png',cat:'IoT / Embedded System / Arduino',ov:'Arduino UNO + HC-SR04 ultrasonic sensor based DC motor speed control — full speed when clear, slows near obstacles, stops when too close. Distance zones: ≥50 cm full speed, 20–50 cm slow, 5–20 cm crawl, ≤5 cm stop.',f:['Distance-based speed zones (full / slow / crawl / stop)','HC-SR04 trig D7, echo D8','Motor PWM on D9','Real-time obstacle response'],s:['Arduino','HC-SR04','C/C++','PWM'],links:[['GitHub','https://github.com/soadulniloy/ultrasonic-motor-speed-control']]},
 {t:'Parking Management System',cat:'C Programming Project',ov:'A C-based project focused on automation logic for parking management and optimization.',f:['Parking management logic','Automated operations','Parking optimization'],s:['C'],links:[]},
-{t:'Smart Irrigation System',cat:'IoT / Embedded System',ov:'An Arduino-based Smart Garden irrigation system built for the DIU Digital Electronics Lab (CSE 224): a soil-moisture sensor on pin A5 drives the pump and indicators on A0/A1/A2 to automate watering. Designed in Tinkercad.',f:['Soil moisture sensing','Automated irrigation control','Sensor-based decision-making','Tinkercad simulation'],s:['Arduino','Soil Moisture Sensor','Tinkercad'],links:[['GitHub','https://github.com/soadulniloy/Smart-Garden-irrigation-system']]},
+{t:'Smart Irrigation System',img:'proj-smart-circuit.png',cat:'IoT / Embedded System',ov:'An Arduino-based Smart Garden irrigation system built for the DIU Digital Electronics Lab (CSE 224): a soil-moisture sensor on pin A5 drives the pump and indicators on A0/A1/A2 to automate watering. Designed in Tinkercad.',f:['Soil moisture sensing','Automated irrigation control','Sensor-based decision-making','Tinkercad simulation'],s:['Arduino','Soil Moisture Sensor','Tinkercad'],links:[['GitHub','https://github.com/soadulniloy/Smart-Garden-irrigation-system']]},
 {t:'Bank Management System',cat:'Object-Oriented Programming',ov:'A Java-based bank management application demonstrating object-oriented programming through account management and transaction operations.',f:['Account management','Transaction operations','Object-oriented application structure'],s:['Java','Object-Oriented Programming (OOP)'],links:[]},
-{t:'Brainberry: All-in-One App',cat:'UI/UX Design',ov:'A multi-purpose application interface designed with a focus on usability and user experience.',f:['User-focused interface','Multi-purpose application concept','UI/UX design'],s:['Adobe XD','UI/UX Design'],links:[['Watch overview','https://www.youtube.com/watch?v=MqWsOzVpTE8']]},
+{t:'Brainberry: All-in-One App',img:'proj-brainberry.jpg',cat:'UI/UX Design',ov:'A multi-purpose application interface designed with a focus on usability and user experience.',f:['User-focused interface','Multi-purpose application concept','UI/UX design'],s:['Adobe XD','UI/UX Design'],links:[['Watch overview','https://www.youtube.com/watch?v=MqWsOzVpTE8']]},
 {t:'Neuro-Symbolic AI: FYDP',cat:'Final Year Design Project / Academic Research',ov:'An academic project exploring the combination of neural-network-based learning and symbolic reasoning to develop an explainable AI framework.',f:['Neural network-based learning','Symbolic reasoning','Explainable AI concepts','Integration of learning-based and rule-based approaches'],s:['Python','PyTorch','Scikit-learn','NumPy','Pandas'],links:[]}];
 // filters
 document.querySelectorAll('#filters button').forEach(b=>{b.onclick=()=>{document.querySelectorAll('#filters button').forEach(x=>x.setAttribute('aria-pressed',x==b));const f=b.dataset.f;document.querySelectorAll('#pgrid article').forEach(a=>{a.style.display=(f=='All'||a.dataset.c==f)?'':'none'})}});
 // modal with morph (FLIP) from the clicked card
 const D=$('#pd');
-function openProj(i,card){const p=P[i];D.innerHTML=`<div class="ph"><span class="art">${p.t}<small>${p.cat.toUpperCase()}</small></span></div><div class="in"><span class="mono">${p.cat}</span><h3 style="font-size:28px">${p.t}</h3><p style="margin-top:8px">${p.ov}</p>
+function openProj(i,card){const p=P[i];D.innerHTML=`${p.img?`<div class="ph" data-img="${p.img}" data-alt="${p.t} screenshot"></div>`:`<div class="ph"><span class="art">${p.t}<small>${p.cat.toUpperCase()}</small></span></div>`}<div class="in"><span class="mono">${p.cat}</span><h3 style="font-size:28px">${p.t}</h3><p style="margin-top:8px">${p.ov}</p>
 ${p.f.length?`<h4>Key features / focus</h4><ul>${p.f.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}<h4>Technology stack</h4><div class="fx">${chips(p.s)}</div>${p.note?`<h4>Note</h4><p>${p.note}</p>`:''}
 ${p.links.length?`<h4>Links</h4><div class="cta">${p.links.map(l=>`<a class="btn" href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join('')}</div>`:''}
 <div class="cta" style="margin-top:20px"><button class="btn o" id="pdclose">Close</button></div></div>`;
-D.showModal();$('#pdclose').onclick=closeProj;
+D.showModal();imgs();$('#pdclose').onclick=closeProj;
 if(!rm&&card){const r=card.getBoundingClientRect(),d=D.getBoundingClientRect();
 const dx=r.left+r.width/2-(d.left+d.width/2),dy=r.top+r.height/2-(d.top+d.height/2),sx=Math.max(r.width/d.width,.05),sy=Math.max(r.height/d.height,.05);
 D.animate([{transform:`translate(${dx}px,${dy}px) scale(${sx},${sy})`,opacity:.35},{transform:'none',opacity:1}],{duration:420,easing:'cubic-bezier(.2,.7,.2,1)'})}}
