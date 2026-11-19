@@ -77,9 +77,6 @@ nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-w
 .big{font:900 clamp(70px,12vw,140px)/1 var(--head);background:linear-gradient(90deg,var(--cy),var(--mg));-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;margin-bottom:34px}.stat p{color:var(--mu)}
 table{width:100%;border-collapse:collapse;font-size:14.5px;background:rgba(13,19,34,.6)}th,td{padding:12px 14px;border:1px solid var(--bd);text-align:left}th{background:var(--el);font-weight:500;color:var(--ice)}
-.g{columns:3 240px;column-gap:14px}.g button{display:block;width:100%;margin:0 0 14px;padding:0;border:1px solid var(--bd);border-radius:10px;overflow:hidden;background:none;cursor:zoom-in;break-inside:avoid}.g .ph{aspect-ratio:var(--r,4/3);border:0;border-radius:0}.g .cap{padding:7px 10px;font:12px var(--mono);color:var(--mu);text-align:left;background:var(--card)}
-#lb{position:fixed;inset:0;background:rgba(5,6,10,.96);display:none;z-index:60;align-items:center;justify-content:center;flex-direction:column;padding:20px}#lb.on{display:flex}#lb img{max-height:80vh;max-width:94vw;object-fit:contain}#lb p{color:var(--mu);margin-top:12px;font:13px var(--mono)}
-#lb button{position:absolute;background:none;border:1px solid var(--bd);color:#fff;font-size:24px;width:46px;height:46px;border-radius:10px;cursor:pointer}#lbx{top:16px;right:16px}#lbp{left:16px}#lbn{right:16px}
 dialog{border:1px solid rgba(0,240,255,.4);border-radius:16px;padding:0;max-width:760px;width:94vw;max-height:90vh;overflow:auto;background:var(--bg2);color:var(--tx);clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px))}dialog::backdrop{background:rgba(5,6,10,.85)}dialog .ph{aspect-ratio:16/8;border:0;border-radius:0}dialog .in{padding:28px}
 dialog h4{font:600 12.5px var(--mono);color:var(--cy);margin:18px 0 6px;letter-spacing:.12em;text-transform:uppercase}dialog ul{padding-left:20px}
 #contact{background:linear-gradient(180deg,transparent,#0a0e18 35%,#12060f)}form{display:grid;gap:14px}label{font:500 13px var(--sans);color:var(--ice);display:grid;gap:5px}
@@ -280,13 +277,11 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padd
 <div class="grid3"><div class="card"><h3>Custom Software Solutions</h3></div><div class="card"><h3>Digital Transformation for Businesses</h3></div><div class="card"><h3>Business Website Development</h3></div><div class="card"><h3>IoT Projects</h3></div><div class="card"><h3>Digital Solutions</h3></div></div></div></section>
 
 <section id="beyond"><div class="w"><p class="kick">// 12 &mdash; <b>Beyond</b></p><h2>Beyond the Keyboard</h2><div class="grid3">
-<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="cycling-street.jpg" data-alt="Mountain biking"></div><h3>Mountain Biking</h3>Bicycle-based outdoor adventures.</div>
-<div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="karate-1.jpg" data-alt="Karate competition"></div><h3>Karate</h3>Martial arts, discipline, and physical development.</div>
+<div class="card"><h3>Mountain Biking</h3>Bicycle-based outdoor adventures.</div>
+<div class="card"><h3>Karate</h3>Martial arts, discipline, and physical development.</div>
 <div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="iit-bombay.jpg" data-alt="Travel and adventure in Mumbai"></div><h3>Travel &amp; Adventure</h3>New places, trekking, and outdoor experiences.</div></div></div></section>
 
-<section id="gallery"><div class="w"><p class="kick">// 13 &mdash; <b>Gallery</b></p><h2>Photography Gallery</h2><p class="lede">Select a photograph to enlarge. Use arrow keys to browse.</p><div class="g" id="gal"></div></div></section>
-
-<section id="contact"><div class="w cols"><div><p class="kick">// 14 &mdash; <b>Contact</b></p><h2>Have an Interesting Idea? Let&rsquo;s Build Something Great.</h2><p>I am open to professional opportunities, software development collaborations, technology projects, and conversations about building useful digital products.</p><br><p><i>Have a project or an opportunity in mind? Let&rsquo;s connect and build something meaningful.</i></p><br>
+<section id="contact"><div class="w cols"><div><p class="kick">// 13 &mdash; <b>Contact</b></p><h2>Have an Interesting Idea? Let&rsquo;s Build Something Great.</h2><p>I am open to professional opportunities, software development collaborations, technology projects, and conversations about building useful digital products.</p><br><p><i>Have a project or an opportunity in mind? Let&rsquo;s connect and build something meaningful.</i></p><br>
 <p><b>Email</b><br><a href="mailto:soadulniloy@gmail.com">soadulniloy@gmail.com</a></p><br>
 <p><b>LinkedIn</b><br><a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">linkedin.com/in/soadulniloy</a></p><br>
 <p><b>GitHub</b><br><a href="https://github.com/soadulniloy" target="_blank" rel="noopener">github.com/soadulniloy</a></p><br>
@@ -295,9 +290,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padd
 <button class="btn" type="submit">Send message</button><p class="mono" id="cstat" role="status"></p></form></div></section>
 </main>
 
-<footer><div class="w"><div><b class="logo">NILOY<b>.</b></b><br>&copy; 2026 MD. Shoadul Islam Niloy</div><div><a href="#profile">Profile</a> &middot; <a href="#projects">Projects</a> &middot; <a href="#research">Research</a> &middot; <a href="#contact">Contact</a> &middot; <a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://github.com/soadulniloy" target="_blank" rel="noopener">GitHub</a></div><a href="#home">Back to top &uarr;</a></div></footer>
+<footer><div class="w"><div><b class="logo">NILOY<b>.</b></b><br>&copy; 2026 MD. Shoadul Islam Niloy<br><span class="mono" style="color:var(--mg)">Made with 🩵 By Dracula</span></div><div><a href="#profile">Profile</a> &middot; <a href="#projects">Projects</a> &middot; <a href="#research">Research</a> &middot; <a href="#contact">Contact</a> &middot; <a href="https://www.linkedin.com/in/soadulniloy" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://github.com/soadulniloy" target="_blank" rel="noopener">GitHub</a></div><a href="#home">Back to top &uarr;</a></div></footer>
 
-<div id="lb" role="dialog" aria-label="Image viewer"><button id="lbx" aria-label="Close">&times;</button><button id="lbp" aria-label="Previous">&lsaquo;</button><img alt=""><p></p><button id="lbn" aria-label="Next">&rsaquo;</button></div>
 <dialog id="pd"></dialog>
 
 <script>
@@ -350,13 +344,6 @@ function closeProj(){if(rm||!D.open)return;const a=D.animate([{opacity:1},{opaci
 document.querySelectorAll('#pgrid article').forEach(a=>{a.addEventListener('click',e=>{if(e.target.closest('a'))return;openProj(+a.dataset.i,a)});
 a.addEventListener('keydown',e=>{if(e.key=='Enter'||e.key==' '){e.preventDefault();openProj(+a.dataset.i,a)}})});
 D.addEventListener('click',e=>{if(e.target==D)closeProj()});
-// gallery (only files that exist in images/)
-const G=[['karate-1.jpg','Karate competition'],['karate-2.jpg','Karate competition'],['karate-bko-team.jpg','BKO Cup team'],['karate-cse-dept.jpg','Karate — CSE department'],['karate-medal.jpg','Karate medal'],['karate-trophy.jpg','Karate trophy'],['cycling-helmet.jpg','Mountain biking'],['cycling-street.jpg','Mountain biking'],['iit-bombay.jpg','IIT Bombay campus'],['diu-campus.jpg','DIU campus'],['diu-campus-life.jpg','University life at DIU'],['diu-sign.jpg','At DIU campus'],['portrait.jpg','Portrait'],['profile-suit.jpg','Portrait — formal'],['author-profile.png','Profile']];
-const ratios=['4/3','3/4','1/1','4/5','3/2'];
-G.forEach((g,i)=>{const b=el('button');b.setAttribute('aria-label','Enlarge: '+g[1]);b.style.setProperty('--r',ratios[i%5]);b.innerHTML=`<div class="ph" data-img="${g[0]}" data-alt="${g[1]}"></div><div class="cap">${g[1]}</div>`;b.onclick=()=>lb(i);$('#gal').append(b)});
-let li=0;const L=$('#lb');function lb(i){li=(i+G.length)%G.length;L.querySelector('img').src=BASE+encodeURI(G[li][0]);L.querySelector('img').alt=G[li][1];L.querySelector('p').textContent=G[li][1]+'  ('+(li+1)+'/'+G.length+')';L.classList.add('on')}
-$('#lbx').onclick=()=>L.classList.remove('on');$('#lbp').onclick=()=>lb(li-1);$('#lbn').onclick=()=>lb(li+1);L.onclick=e=>{if(e.target==L)L.classList.remove('on')};
-document.addEventListener('keydown',e=>{if(!L.classList.contains('on'))return;if(e.key=='Escape')L.classList.remove('on');if(e.key=='ArrowLeft')lb(li-1);if(e.key=='ArrowRight')lb(li+1)});
 // contact form
 $('#cf').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);location.href=`mailto:soadulniloy@gmail.com?subject=${encodeURIComponent('Portfolio message from '+f.get('name'))}&body=${encodeURIComponent(f.get('msg')+'\n\nReply to: '+f.get('email'))}`;$('#cstat').textContent='Your email app should open with the message ready to send.'};
 // hero name morph: big -> small as you scroll; nav lights up as the small name
