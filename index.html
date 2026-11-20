@@ -10,30 +10,30 @@
 :root{--bg:#05060a;--bg2:#0a0e18;--card:#0d1322;--el:#131b2e;--cy:#00f0ff;--mg:#ff2e88;--ice:#a5f3fc;--tx:#eef4ff;--mu:#8b98b4;--bd:rgba(0,240,255,.16);--bd2:rgba(255,46,136,.35);--head:Orbitron,system-ui,sans-serif;--sans:Inter,system-ui,sans-serif;--mono:'JetBrains Mono',monospace}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:96px}
 body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans);overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;z-index:-2;opacity:.5;background:linear-gradient(var(--bd) 1px,transparent 1px) 0 0/54px 54px,linear-gradient(90deg,var(--bd) 1px,transparent 1px) 0 0/54px 54px;mask-image:radial-gradient(ellipse at 50% 12%,#000,transparent 78%)}
-body:after{content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.05;background:repeating-linear-gradient(0deg,transparent 0 2px,#fff 2px 3px)}
-#glow{position:fixed;left:0;top:0;width:560px;height:560px;margin:-280px 0 0 -280px;background:radial-gradient(circle,rgba(0,240,255,.12),transparent 65%);pointer-events:none;z-index:-1}
-#glow2{position:fixed;right:-160px;bottom:-160px;width:520px;height:520px;background:radial-gradient(circle,rgba(255,46,136,.10),transparent 65%);pointer-events:none;z-index:-1}
+
+
+
+
 #prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--cy),var(--mg));z-index:50;box-shadow:0 0 12px rgba(0,240,255,.7)}
-#ld{position:fixed;inset:0;z-index:99;background:var(--bg);display:grid;place-items:center;font:900 40px var(--head);letter-spacing:.08em;animation:ld .5s .9s forwards}#ld b{color:var(--cy)}#ld i{color:var(--mg);font-style:normal}@keyframes ld{to{opacity:0;visibility:hidden}}
+
 img{max-width:100%;display:block}a{color:var(--cy)}:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
-.w{max-width:1140px;margin:auto;padding:0 22px}section{padding:96px 0}
+.w{max-width:1140px;margin:auto;padding:0 22px}section{padding:72px 0}
 .kick{font:600 12.5px var(--mono);letter-spacing:.18em;color:var(--cy);text-transform:uppercase}.kick b{color:var(--mg);font-weight:600}
 h2{font:800 clamp(28px,4.2vw,46px)/1.08 var(--head);letter-spacing:.01em;margin:10px 0 12px}
 h2 .cy{color:var(--cy)}h2 .mg{color:var(--mg)}
 h3{font:600 19px/1.35 var(--sans)}.lede{max-width:640px;color:var(--mu);margin-bottom:38px}.mono{font:12.5px var(--mono);color:var(--mu)}
 nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:min(1200px,calc(100% - 24px));z-index:30;background:rgba(8,12,22,.78);backdrop-filter:blur(14px);border:1px solid var(--bd);border-radius:14px;transition:box-shadow .3s,border-color .3s}
-nav.lit{border-color:var(--bd2);box-shadow:0 0 30px rgba(255,46,136,.18),0 0 24px rgba(0,240,255,.12)}
+nav.lit{border-color:var(--bd2);box-shadow:0 4px 20px rgba(0,0,0,.35)}
 nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-width:none}
-.logo{font:800 18px var(--head);color:var(--tx);text-decoration:none;letter-spacing:.06em;transition:text-shadow .3s,transform .3s}.logo b{color:var(--cy)}nav.lit .logo{text-shadow:0 0 18px rgba(0,240,255,.8);transform:scale(1.04)}
+.logo{font:800 18px var(--head);color:var(--tx);text-decoration:none;letter-spacing:.06em;transition:text-shadow .3s,transform .3s}.logo b{color:var(--cy)}nav.lit .logo{transform:scale(1.02)}
 #menu{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
 #menu a{color:var(--mu);text-decoration:none;font-size:13px;white-space:nowrap;padding:6px 10px;border-radius:8px;transition:.2s}#menu a:hover{color:var(--tx)}#menu a.on{color:var(--cy);background:rgba(0,240,255,.08)}
 .nr{display:flex;gap:8px}.nr .btn{padding:7px 14px;font-size:13px}.hb{display:none;margin-left:auto;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;width:40px;height:36px;font-size:18px;cursor:pointer}
 .btn{display:inline-block;padding:12px 22px;border:1px solid var(--cy);background:var(--cy);color:#04111f;text-decoration:none;font:600 14px var(--sans);cursor:pointer;transition:box-shadow .25s,transform .15s;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
-.btn:hover{box-shadow:0 0 26px rgba(0,240,255,.5);transform:translateY(-1px)}
+.btn:hover{box-shadow:0 0 12px rgba(0,240,255,.35);transform:translateY(-1px)}
 .btn.o{background:rgba(0,240,255,.06);color:var(--cy)}.btn.o:hover{background:rgba(0,240,255,.14)}
-.btn.mg{border-color:var(--mg);background:var(--mg);color:#fff}.btn.mg:hover{box-shadow:0 0 26px rgba(255,46,136,.5)}
-.hero{padding:158px 0 80px}.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.btn.mg{border-color:var(--mg);background:var(--mg);color:#fff}.btn.mg:hover{box-shadow:0 0 12px rgba(255,46,136,.35)}
+.hero{padding:136px 0 64px}.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
 #heroName{font:900 clamp(46px,8.6vw,118px)/1.02 var(--head);letter-spacing:.01em;margin:18px 0 8px;will-change:transform,opacity;transform-origin:left top}
 #heroName .ln{display:block;background:linear-gradient(92deg,var(--cy) 0%,#7dd3fc 38%,var(--mg) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(0,240,255,.28))}
 .hero h2.sub{font:600 clamp(22px,3vw,34px)/1.2 var(--sans);letter-spacing:-.01em;margin:0 0 16px;color:var(--tx)}
@@ -41,16 +41,16 @@ nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-w
 .d{max-width:540px;color:var(--mu)}.cta{display:flex;gap:10px;flex-wrap:wrap}
 .cstrip{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}
 .cstrip a{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--bd);background:rgba(13,19,34,.7);border-radius:9px;padding:8px 13px;font:600 13px var(--mono);color:var(--ice);text-decoration:none;transition:.2s}
-.cstrip a:hover{border-color:var(--cy);box-shadow:0 0 16px rgba(0,240,255,.25);color:#fff}
+.cstrip a:hover{border-color:var(--cy);color:#fff}
 .cstrip a i{font-style:normal;color:var(--mg)}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 22px;max-width:540px}
 .facts div{background:rgba(13,19,34,.65);backdrop-filter:blur(8px);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--mu);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}.facts b{display:block;font:800 22px var(--head);color:var(--ice)}
 .scrollhint{margin-top:34px;font:600 11.5px var(--mono);letter-spacing:.22em;color:var(--mu);animation:bob 2.2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(5px)}}
-.pw{position:relative;padding:26px}.ring{position:absolute;inset:-4px;border:1px dashed rgba(165,243,252,.3);border-radius:50%;pointer-events:none}.r2{inset:40px -26px;border:1px solid rgba(255,46,136,.28)}
-.fl{position:absolute;background:rgba(13,19,34,.88);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:10px;padding:9px 13px;font:12px var(--mono);color:var(--ice)}.f1{left:-8px;bottom:64px}.f2{right:-8px;top:54px}
+.pw{position:relative}
+
 .ph{position:relative;background:var(--card);border:1px solid var(--bd);overflow:hidden;border-radius:10px}.ph img{width:100%;height:100%;object-fit:cover}
 .ph .miss{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:12px;font:12px var(--mono);color:var(--mu);word-break:break-all}.ph.bad .miss{display:flex}.ph.bad img{display:none}
-.portrait{aspect-ratio:4/5;border-radius:18px;border-color:rgba(0,240,255,.4);box-shadow:0 0 70px rgba(0,240,255,.18),0 0 40px rgba(255,46,136,.10)}
+.portrait{aspect-ratio:4/5;border-radius:18px;border-color:rgba(0,240,255,.4);box-shadow:0 10px 30px rgba(0,0,0,.4)}
 .fx{display:flex;gap:6px;flex-wrap:wrap}.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--bd);background:rgba(19,27,46,.75);border-radius:8px;padding:4px 10px;font-size:13px}
 .chip img,.tile img{background:#F1F5F9;border-radius:4px;padding:1px}.chip img{width:16px;height:16px}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px}.pad{padding-top:6px}
@@ -58,10 +58,10 @@ nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-w
 .tl h3{font-size:17px}.when{font:12.5px var(--mono);color:var(--cy)}
 .grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
 .card{background:rgba(13,19,34,.72);border:1px solid var(--bd);border-radius:14px;padding:22px;backdrop-filter:blur(8px);transition:border-color .25s,box-shadow .25s,transform .25s;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))}
-.card:hover{border-color:rgba(0,240,255,.5);box-shadow:0 0 30px rgba(0,240,255,.10);transform:translateY(-3px)}
+.card:hover{border-color:rgba(0,240,255,.5);box-shadow:0 6px 20px rgba(0,0,0,.35);transform:translateY(-3px)}
 .card.pj{padding:0;overflow:hidden;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%;display:block}
 .pj .ph{aspect-ratio:16/10;border:0;border-radius:0;border-bottom:1px solid var(--bd)}
-.pj .ph .art{transition:transform .5s,filter .5s}.pj:hover .ph .art{transform:scale(1.05);filter:hue-rotate(18deg)}
+.pj .ph .art{transition:transform .5s,filter .5s}.pj:hover .ph .art{transform:scale(1.03)}
 .pj .b{padding:18px}.pj p{font-size:14.5px;color:var(--mu);margin:6px 0 12px}
 #pgrid{grid-template-columns:repeat(3,1fr)}#pgrid>:nth-child(5n+1){grid-column:span 2}#pgrid>:nth-child(5n+1) .ph{aspect-ratio:21/9}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}.tabs button{border:1px solid var(--bd);background:rgba(13,19,34,.6);color:var(--mu);border-radius:8px;padding:7px 15px;cursor:pointer;font:500 13px var(--sans);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}.tabs button[aria-pressed=true]{border-color:var(--cy);color:var(--cy);background:rgba(0,240,255,.08)}
@@ -72,7 +72,7 @@ nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-w
 .tile img{width:36px;height:36px;margin:0 auto 8px}
 .tile i{display:grid;place-items:center;width:36px;height:36px;margin:0 auto 8px;background:var(--el);border-radius:8px;font:700 14px var(--head);color:var(--cy);font-style:normal}
 .skp{display:flex;flex-wrap:wrap;gap:12px;align-content:flex-start}
-.feat{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(0,240,255,.3);background:rgba(13,19,34,.72);border-radius:16px;overflow:hidden;box-shadow:0 0 60px rgba(0,240,255,.07)}
+.feat{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(0,240,255,.3);background:rgba(13,19,34,.72);border-radius:16px;overflow:hidden;}
 .feat .art{position:relative;inset:auto;min-height:340px}.feat .tx{padding:34px}.feat dl{display:grid;grid-template-columns:90px 1fr;gap:6px 14px;font-size:14px;margin:16px 0}dt{font:12.5px var(--mono);color:var(--mu)}dd{margin:0}
 .big{font:900 clamp(70px,12vw,140px)/1 var(--head);background:linear-gradient(90deg,var(--cy),var(--mg));-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;margin-bottom:34px}.stat p{color:var(--mu)}
@@ -85,11 +85,10 @@ footer{background:var(--bg2);border-top:1px solid var(--bd);color:var(--mu);padd
 .dis{opacity:.5;pointer-events:none}
 .rv{opacity:0;transform:translateY(26px) scale(.985);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
 .rv.in{opacity:1;transform:none}
-.rv.in h2{animation:glitch .55s steps(2,end) 1}
-@keyframes glitch{0%{text-shadow:3px 0 var(--mg),-3px 0 var(--cy)}40%{text-shadow:-3px 0 var(--mg),3px 0 var(--cy)}100%{text-shadow:none}}
-@media(prefers-reduced-motion:no-preference){.ring{animation:spin 50s linear infinite}.r2{animation-direction:reverse;animation-duration:70s}@keyframes spin{to{transform:rotate(360deg)}}body:before{animation:gr 30s linear infinite}@keyframes gr{to{background-position:0 54px,54px 0}}}
+
+
 @media(max-width:900px){.hg,.cols,.feat{grid-template-columns:1fr}.stat{gap:10px}.pw{max-width:420px}#pgrid{grid-template-columns:1fr}#pgrid>:nth-child(5n+1){grid-column:auto}.hb{display:block}.nr .btn:first-child{display:none}
-section{padding:64px 0}.hero{padding:132px 0 56px}.hg{gap:36px}.pw{padding:16px}.fl{font-size:11px;padding:7px 10px}.f1{left:4px;bottom:48px}.f2{right:4px;top:40px}
+section{padding:64px 0}.hero{padding:132px 0 56px}.hg{gap:36px}.pw{padding:0}
 #heroName{font-size:clamp(40px,11.5vw,64px)}
 .facts{gap:10px}.facts div{padding:12px;font-size:12.5px;min-width:0;overflow-wrap:break-word}.facts b{font-size:19px}
 .cstrip a{max-width:100%;overflow-wrap:anywhere}
@@ -102,7 +101,7 @@ dialog .in{padding:20px}
 #menu{display:none;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:rgba(8,12,22,.97);border:1px solid var(--bd);border-radius:12px;padding:10px}#menu.open{display:flex}.nr{margin-left:0}}
 .art{position:absolute;inset:0;display:grid;place-items:center;padding:16px;text-align:center;font:800 20px/1.25 var(--head);color:rgba(165,243,252,.55);background:radial-gradient(circle at 25% 15%,rgba(0,240,255,.18),transparent 60%),radial-gradient(circle at 80% 90%,rgba(255,46,136,.16),transparent 55%),var(--card)}
 .art small{display:block;font:600 11px var(--mono);letter-spacing:.2em;color:var(--mg);margin-top:8px}
-</style></head><body><div id="glow"></div><div id="glow2"></div><div id="prog"></div><div id="ld">NILOY<b>.</b><i>//</i></div>
+</style></head><body><div id="prog"></div>
 <nav id="topnav"><div class="w"><a class="logo" href="#home">NILOY<b>.</b></a><button class="hb" aria-label="Menu" aria-expanded="false">☰</button><div id="menu"></div><div class="nr"><a class="btn" href="cv/Niloy-CV.pdf" download>Download CV</a><a class="btn o" href="https://www.linkedin.com/in/shoadulniloy" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></div></div></nav>
 
 <header id="home" class="hero"><div class="w hg"><div>
@@ -119,7 +118,7 @@ dialog .in{padding:20px}
 <div class="facts" style="margin-top:22px"><div><b><span data-n="100">100</span>+</b>Problems solved on beecrowd</div><div><b>IIT Bombay</b>Visiting student, Autumn 2024</div><div><b>IEEE Access</b>FlashViT, published research</div><div><b><span data-n="13">13</span></b>Software and research projects</div></div>
 <p class="scrollhint">SCROLL &darr; &mdash; THE NAME MORPHS</p>
 </div>
-<div class="pw"><i class="ring"></i><i class="ring r2"></i><div class="ph portrait" data-img="portrait.jpg" data-alt="Portrait of MD. Shoadul Islam Niloy"></div><span class="fl f1">FlashViT &middot; IEEE Access</span><span class="fl f2">IIT Bombay &middot; Autumn 2024</span></div></div></header>
+<div class="pw"><div class="ph portrait" data-img="portrait.jpg" data-alt="Portrait of MD. Shoadul Islam Niloy"></div></div></div></header>
 
 <main>
 <section id="profile"><div class="w cols"><div><p class="kick">// 01 &mdash; <b>Profile</b></p><h2>About <span class="cy">Me</span></h2>
@@ -266,35 +265,37 @@ dialog .in{padding:20px}
 <a class="btn" href="https://doi.org/10.1109/ACCESS.2026.3738311" target="_blank" rel="noopener">Read the paper (DOI)</a></div></div>
 <div class="card" style="margin-top:22px"><h3>Neuro-Symbolic AI: Final Year Design Project</h3><p style="margin:6px 0">An academic project exploring the integration of neural learning and symbolic reasoning toward an explainable AI framework. Technologies: Python, PyTorch, Scikit-learn, NumPy, Pandas.</p></div></div></section>
 
-<section id="iitb"><div class="w"><p class="kick">// 07 &mdash; <b>IIT Bombay</b></p><h2>IIT Bombay: Academic Journey</h2><p class="lede">Visiting / Exchange Student, Autumn 2024. Select a course to see its learning area.</p>
-<div class="cols"><div><div class="tabs" id="courses"></div><div class="card" id="cinfo" aria-live="polite">Select a course.</div>
-<p class="mono" style="margin-top:12px">Note: EE353 title/code to be checked against the official academic record.</p></div>
-<div class="ph" style="aspect-ratio:4/3" data-img="iit-bombay.jpg" data-alt="IIT Bombay campus"></div></div></div></section>
 
-<section id="travel"><div class="w"><p class="kick">// 08 &mdash; <b>Travel</b></p><h2>IIT Bombay: Travel &amp; Exploration</h2><p class="lede">Separate from coursework: personal travel and exploration across Mumbai and Maharashtra.</p>
-<div class="cols"><div><h3>Places visited</h3><div class="fx pad" id="places"></div><h3 style="margin-top:24px">Experiences</h3><div class="fx pad" id="exps"></div></div>
-<div class="ph" style="aspect-ratio:16/10" data-img="iit-bombay.jpg" data-alt="Travel photograph from Mumbai"></div></div></div></section>
 
-<section id="cp"><div class="w"><p class="kick">// 09 &mdash; <b>Programming</b></p><h2>Competitive Programming</h2>
+<section id="cp"><div class="w"><p class="kick">// 07 &mdash; <b>Programming</b></p><h2>Competitive Programming</h2>
 <div class="stat"><div class="big">100+</div><div><h3>Problems solved on URI Online Judge (beecrowd)</h3><p>Practical experience in algorithmic thinking, programming fundamentals, logical reasoning, and problem-solving.</p></div></div>
 <table><thead><tr><th>Contest</th><th>Preliminary round</th><th>Main round</th></tr></thead><tbody>
 <tr><td>DIU Takeoff Intra University Programming Contest 2022</td><td>Position 76</td><td>Position 117</td></tr>
 <tr><td>Unlock The Algorithm 2024 Programming Contest</td><td>Position 28</td><td>Position 96</td></tr></tbody></table></div></section>
 
-<section id="leadership"><div class="w"><p class="kick">// 10 &mdash; <b>Leadership</b></p><h2>Leadership &amp; Achievements</h2><div class="cols"><div class="tl">
+<section id="leadership"><div class="w"><p class="kick">// 08 &mdash; <b>Leadership</b></p><h2>Leadership &amp; Achievements</h2><div class="cols"><div class="tl">
 <div><span class="when">2026–2027</span><h3>President, DIU Karate-Do Club</h3>Club leadership, organizational activities, student engagement, and coordination of club initiatives.</div>
 <div><span class="when">2025–2026</span><h3>Former Program Secretary, DIU Karate-Do Club</h3>Programme coordination, club activities, and organizational support.</div>
 <div><span class="when">Former</span><h3>Core Member, DIU Robotics Club</h3>Participated in student-led robotics club activities.</div></div>
 <div class="grid3" style="grid-template-columns:1fr"><div class="card"><span class="when">2025</span><h3>Bronze Medalist</h3>BKO Cup, 6th International Open Karate Championship 2025 &middot; Male Kumite</div>
 <div class="card"><span class="when">2015</span><h3>3rd Place</h3>Prothom Alo Biggan Joyotsob 2015 &middot; Science Olympiad, Junior Segment</div></div></div></div></section>
 
-<section id="business"><div class="w"><p class="kick">// 11 &mdash; <b>Services</b></p><h2>Niloy&rsquo;s Digital Solutions</h2><p class="lede">A digital solutions initiative focused on helping businesses and organizations improve their digital presence, operations, and technological capabilities.</p>
+<section id="business"><div class="w"><p class="kick">// 09 &mdash; <b>Services</b></p><h2>Niloy&rsquo;s Digital Solutions</h2><p class="lede">A digital solutions initiative focused on helping businesses and organizations improve their digital presence, operations, and technological capabilities.</p>
 <div class="grid3"><div class="card"><h3>Custom Software Solutions</h3></div><div class="card"><h3>Digital Transformation for Businesses</h3></div><div class="card"><h3>Business Website Development</h3></div><div class="card"><h3>IoT Projects</h3></div><div class="card"><h3>Digital Solutions</h3></div></div></div></section>
 
-<section id="beyond"><div class="w"><p class="kick">// 12 &mdash; <b>Beyond</b></p><h2>Beyond the Keyboard</h2><div class="grid3">
+<section id="beyond"><div class="w"><p class="kick">// 10 &mdash; <b>Beyond</b></p><h2>Beyond the Keyboard</h2><div class="grid3">
 <div class="card"><h3>Mountain Biking</h3>Bicycle-based outdoor adventures.</div>
 <div class="card"><h3>Karate</h3>Martial arts, discipline, and physical development.</div>
 <div class="card"><div class="ph" style="aspect-ratio:4/3;margin-bottom:14px" data-img="iit-bombay.jpg" data-alt="Travel and adventure in Mumbai"></div><h3>Travel &amp; Adventure</h3>New places, trekking, and outdoor experiences.</div></div></div></section>
+
+<section id="iitb"><div class="w"><p class="kick">// 11 &mdash; <b>IIT Bombay</b></p><h2>IIT Bombay: Academic Journey</h2><p class="lede">Visiting / Exchange Student, Autumn 2024. Select a course to see its learning area.</p>
+<div class="cols"><div><div class="tabs" id="courses"></div><div class="card" id="cinfo" aria-live="polite">Select a course.</div>
+<p class="mono" style="margin-top:12px">Note: EE353 title/code to be checked against the official academic record.</p></div>
+<div class="ph" style="aspect-ratio:4/3" data-img="iit-bombay.jpg" data-alt="IIT Bombay campus"></div></div></div></section>
+
+<section id="travel"><div class="w"><p class="kick">// 12 &mdash; <b>Travel</b></p><h2>IIT Bombay: Travel &amp; Exploration</h2><p class="lede">Separate from coursework: personal travel and exploration across Mumbai and Maharashtra.</p>
+<div class="cols"><div><h3>Places visited</h3><div class="fx pad" id="places"></div><h3 style="margin-top:24px">Experiences</h3><div class="fx pad" id="exps"></div></div>
+<div class="ph" style="aspect-ratio:16/10" data-img="iit-bombay.jpg" data-alt="Travel photograph from Mumbai"></div></div></div></section>
 
 <section id="contact"><div class="w cols"><div><p class="kick">// 13 &mdash; <b>Contact</b></p><h2>Have an Interesting Idea? Let&rsquo;s Build Something Great.</h2><p>I am open to professional opportunities, software development collaborations, technology projects, and conversations about building useful digital products.</p><br><p><i>Have a project or an opportunity in mind? Let&rsquo;s connect and build something meaningful.</i></p><br>
 <p><b>Email</b><br><a href="mailto:soadulniloy@gmail.com">soadulniloy@gmail.com</a></p><br>
@@ -378,7 +379,6 @@ document.querySelectorAll('.skgroup').forEach((a,i)=>{a.classList.add('rv');a.st
 const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('#menu a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
 document.querySelectorAll('header[id],section[id]').forEach(x=>so.observe(x));
 if(!rm)document.querySelectorAll('[data-n]').forEach(x=>{const n=+x.dataset.n;let t0;const f=t=>{t0=t0||t;const p=Math.min((t-t0)/1300,1);x.textContent=Math.round(n*p);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)});
-if(matchMedia('(pointer:fine)').matches&&!rm){addEventListener('pointermove',e=>{$('#glow').style.transform=`translate(${e.clientX}px,${e.clientY}px)`})}
 const hb=$('.hb');hb.onclick=()=>{const o=$('#menu').classList.toggle('open');hb.setAttribute('aria-expanded',o)};$('#menu').onclick=()=>$('#menu').classList.remove('open');
 imgs();
 </script></body></html>
