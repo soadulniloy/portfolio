@@ -33,7 +33,7 @@ nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-w
 .btn:hover{box-shadow:0 0 12px rgba(0,240,255,.35);transform:translateY(-1px)}
 .btn.o{background:rgba(0,240,255,.06);color:var(--cy)}.btn.o:hover{background:rgba(0,240,255,.14)}
 .btn.mg{border-color:var(--mg);background:var(--mg);color:#fff}.btn.mg:hover{box-shadow:0 0 12px rgba(255,46,136,.35)}
-.hero{padding:136px 0 64px}.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero{padding:136px 0 64px}.hg{display:grid;grid-template-columns:1fr;gap:60px;align-items:center}
 #heroName{font:900 clamp(46px,8.6vw,118px)/1.02 var(--head);letter-spacing:.01em;margin:18px 0 8px;will-change:transform,opacity;transform-origin:left top}
 #heroName .ln{display:block;background:linear-gradient(92deg,var(--cy) 0%,#7dd3fc 38%,var(--mg) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(0,240,255,.28))}
 .hero h2.sub{font:600 clamp(22px,3vw,34px)/1.2 var(--sans);letter-spacing:-.01em;margin:0 0 16px;color:var(--tx)}
@@ -46,7 +46,6 @@ nav .w{display:flex;align-items:center;gap:14px;height:56px;padding:0 16px;max-w
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 22px;max-width:540px}
 .facts div{background:rgba(13,19,34,.65);backdrop-filter:blur(8px);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;font-size:13px;color:var(--mu);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}.facts b{display:block;font:800 22px var(--head);color:var(--ice)}
 .scrollhint{margin-top:34px;font:600 11.5px var(--mono);letter-spacing:.22em;color:var(--mu);animation:bob 2.2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(5px)}}
-.pw{position:relative}
 
 .ph{position:relative;background:var(--card);border:1px solid var(--bd);overflow:hidden;border-radius:10px}.ph img{width:100%;height:100%;object-fit:cover}
 .ph .miss{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:12px;font:12px var(--mono);color:var(--mu);word-break:break-all}.ph.bad .miss{display:flex}.ph.bad img{display:none}
@@ -119,7 +118,7 @@ dialog .in{padding:20px}
 <div class="facts" style="margin-top:22px"><div><b><span data-n="100">100</span>+</b>Problems solved on beecrowd</div><div><b>IIT Bombay</b>Visiting student, Autumn 2024</div><div><b>IEEE Access</b>FlashViT, published research</div><div><b><span data-n="13">13</span></b>Software and research projects</div></div>
 <p class="scrollhint">SCROLL &darr; &mdash; THE NAME MORPHS</p>
 </div>
-<div class="pw"><div class="ph portrait" data-img="portrait.jpg" data-alt="Portrait of MD. Shoadul Islam Niloy"></div></div></div></header>
+</div></header>
 
 <main>
 <section id="profile"><div class="w cols"><div><p class="kick">// 01 &mdash; <b>Profile</b></p><h2>About <span class="cy">Me</span></h2>
@@ -127,7 +126,7 @@ dialog .in{padding:20px}
 <p>My experience spans web development, mobile application development, machine learning, IoT, database-driven applications, and UI/UX design. I have also completed an international student exchange programme at IIT Bombay, India.</p><br>
 <p>Alongside my technical journey, I have developed leadership, communication, teamwork, and organizational skills through student organizations, competitive programming, and extracurricular activities. My goal is to create useful, scalable, and user-focused digital products while continuously growing as a software professional.</p>
 <h3 style="margin-top:26px">Interests</h3><div class="fx pad" id="interests"></div></div>
-<div class="ph" style="aspect-ratio:4/5" data-img="dp-formal.jpg" data-alt="Niloy, formal portrait"></div></div></section>
+<div class="ph" style="aspect-ratio:4/5" data-img="dp-formal.png" data-alt="Niloy, formal portrait"></div></div></section>
 
 <section id="projects"><div class="w"><p class="kick">// 02 &mdash; <b>Projects</b></p><h2>Featured <span class="cy">Projects</span></h2><p class="lede">Thirteen approved projects. Select any card for the full details — GitHub and live links are on the cards.</p>
 <div class="tabs" id="filters" role="group" aria-label="Filter projects">
